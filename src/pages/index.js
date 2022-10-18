@@ -72,16 +72,25 @@ const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=de
 const IndexPage = () => (
   <Layout> {/* wrap entire thing in Layout tag in order to give it header + footer defined as layer */}
     <Seo title="Home" />
+    {/* <StaticImage
+      src="../images/MVHacksLogoMV.png"
+      loading="eager"
+      height={350}
+      quality={95}
+      alt="MV Hacks logo"
+      style={{ margin: 20 }}
+    /> */}
     <div className={styles.textCenter}> {/* this doesn't even center text, it left aligns it now cause I changed it. prob should rename after I figure more of the page layout out. also styles.center just access styling class called textCenter found in index.modules.css* /}
       {/* display mvhacks image */}
-      <StaticImage
-        src="../images/MVHacksLogoMV.png"
-        loading="eager"
-        height={350}
-        quality={95}
-        alt="MV Hacks logo"
-        style={{ margin: 20 }}
-      />
+      <div id={styles.firstHello}>
+        2023
+        <div id={styles.secondHello}>
+          MV Hacks 5.0
+        </div>
+        <div id={styles.thirdHello}>
+          The hackathon for everyone. Especially beginners.
+        </div>
+      </div>
 
       {/* <StaticImage
         src="../images/example.png"

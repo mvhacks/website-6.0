@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+
 .list {
   display: grid;
   margin: 0;
@@ -46,6 +48,8 @@
 
 .textCenter {
   text-align: left;
+  background-color: #022f52;
+  padding: 10vh;
 }
 
 .intro {
@@ -56,4 +60,34 @@
 /* added padding to mvhacks image, so it looks less crammed */
 .img {
   padding-top: 4vh;
+}
+
+#firstHello {
+  font-family: 'Raleway', sans-serif;
+  font-size: 250px;
+  font-weight: 400;
+  text-align: center;
+  /* padding: 10vh; */
+  /* position: relative;  */
+  margin: 0 auto; 
+  text-align: center;
+  color: rgba(28, 68, 212, 0.373);
+  /* opacity: 0.2; */
+}
+
+#secondHello {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 150px;
+  position: absolute; 
+  top: 250px;
+  /* top: 1vh;  */
+  width: 90%;
+  color: rgb(172, 188, 226);
+}
+
+#thirdHello {
+  color: rgb(172, 188, 226);
+  font-size: 25px;
 }

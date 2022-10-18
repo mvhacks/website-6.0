@@ -70,10 +70,20 @@ const moreLinks = [
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`;
 
 const IndexPage = () => (
-  <Layout>
+  <Layout> {/* wrap entire thing in Layout tag in order to give it header + footer defined as layer */}
     <Seo title="Home" />
-    <div className={styles.textCenter}>
+    <div className={styles.textCenter}> {/* this doesn't even center text, it left aligns it now cause I changed it. prob should rename after I figure more of the page layout out. also styles.center just access styling class called textCenter found in index.modules.css* /}
+      {/* display mvhacks image */}
       <StaticImage
+        src="../images/MVHacksLogoMV.png"
+        loading="eager"
+        height={350}
+        quality={95}
+        alt="MV Hacks logo"
+        style={{ margin: 20 }}
+      />
+
+      {/* <StaticImage
         src="../images/example.png"
         loading="eager"
         width={64}
@@ -81,7 +91,7 @@ const IndexPage = () => (
         formats={["auto", "webp", "avif"]}
         alt=""
         style={{ marginBottom: `var(--space-3)` }}
-      />
+      /> */}
       <h1>
         Welcome to <b>Gatsby!</b>
       </h1>

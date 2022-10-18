@@ -45,10 +45,15 @@
 }
 
 .textCenter {
-  text-align: center;
+  text-align: left;
 }
 
 .intro {
   max-width: none;
   line-height: var(--line-height-loose);
+}
+
+/* added padding to mvhacks image, so it looks less crammed */
+.img {
+  padding-top: 4vh;
 }

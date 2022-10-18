@@ -1,3 +1,39 @@
+/* .layout {
+  line-height: 1px;
+} */
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2vh 2vh 0vh 2vh;
+  background-color: antiquewhite;
+  box-sizing: 10vh;
+}
+
+nav .links {
+  display: inline-block;
+  text-align: right;
+}
+
+nav a {
+  display: inline-block;
+  margin-left: 2vh;
+  font-weight: 400;
+  /* padding-bottom: 8px; */
+  border-bottom: transparent;
+}
+
+nav a:hover {
+  background-color: #333;
+  color: wheat;
+  /* border-color: aquamarine; */
+}
+
+.footer {
+  background-color: aquamarine;
+  padding: 5vh;
+}
+
 :root {
   --border-radius: 4px;
   --color-text: #333;

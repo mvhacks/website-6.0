@@ -5,6 +5,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import * as styles from "../components/index.module.css";
+import { Button, ButtonGroup } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react'
+
 
 const links = [
   {
@@ -70,72 +73,54 @@ const moreLinks = [
 const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`;
 
 const IndexPage = () => (
-  <Layout> {/* wrap entire thing in Layout tag in order to give it header + footer defined as layer */}
-    <Seo title="Home" />
-    {/* <StaticImage
-      src="../images/MVHacksLogoMV.png"
-      loading="eager"
-      height={350}
-      quality={95}
-      alt="MV Hacks logo"
-      style={{ margin: 20 }}
-    /> */}
-    <div className={styles.textCenter}> {/* this doesn't even center text, it left aligns it now cause I changed it. prob should rename after I figure more of the page layout out. also styles.center just access styling class called textCenter found in index.modules.css* /}
-      {/* display mvhacks image */}
-      <div id={styles.firstHello}>
-        2023
-        <div id={styles.secondHello}>
-          MV Hacks 5.0
+  <ChakraProvider>
+    <Layout> {/* wrap entire thing in Layout tag in order to give it header + footer defined as layer */}
+      <Seo title="Home" />
+      {/* <StaticImage
+        src="../images/MVHacksLogoMV.png"
+        loading="eager"
+        height={350}
+        quality={95}
+        alt="MV Hacks logo"
+        style={{ margin: 20 }}
+      /> */}
+      <div className={styles.textCenter}> {/* this doesn't even center text, it left aligns it now cause I changed it. prob should rename after I figure more of the page layout out. also styles.center just access styling class called textCenter found in index.modules.css* /}
+        {/* display mvhacks image */}
+        <div id={styles.backgroundText}>
+          2023
+          <div id={styles.foregroundText}>
+            MV Hacks 5.0
+          </div>
+          <div id={styles.subtitle}>
+            The hackathon for everyone. Especially beginners.
+          </div>
         </div>
-        <div id={styles.thirdHello}>
-          The hackathon for everyone. Especially beginners.
-        </div>
+        <Button colorScheme='blue' variant='outline' id={styles.applyButton}>
+          <a href="https://cdn.akamai.steamstatic.com/steam/apps/1678830/capsule_616x353.jpg?t=1650474459">Apply today!</a>
+        </Button>
       </div>
 
-      {/* <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      /> */}
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
+      <ul className={styles.list}>
+        {links.map(link => (
+          <li key={link.url} className={styles.listItem}>
+            <a
+              className={styles.listItemLink}
+              href={`${link.url}${utmParameters}`}
+            >
+              {link.text} ↗
+            </a>
+            <p className={styles.listItemDescription}>{link.description}</p>
+          </li>
         ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
-    </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
+      </ul>
+      {moreLinks.map((link, i) => (
+        <React.Fragment key={link.url}>
+          <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+          {i !== moreLinks.length - 1 && <> · </>}
+        </React.Fragment>
       ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
-  </Layout>
+    </Layout>
+  </ChakraProvider >
 );
 
 /**

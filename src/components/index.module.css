@@ -3,7 +3,6 @@
 .list {
   display: grid;
   margin: 0;
-  /* https://css-tricks.com/responsive-layouts-fewer-media-queries/ */
   --w: 280px;
   --n: 2;
   gap: var(--size-gap);
@@ -46,48 +45,52 @@
   margin-top: var(--space-1);
 }
 
-.textCenter {
-  text-align: left;
-  background-color: #022f52;
-  padding: 10vh;
-}
 
-.intro {
+.textCenter {
+  /* text-align: left; */
+  background-color: #022f52;
+  padding-bottom: 40vh;
+  padding-top: 10vh;
+  text-align: center;
+} 
+
+/* .intro {
   max-width: none;
   line-height: var(--line-height-loose);
-}
+} */
 
 /* added padding to mvhacks image, so it looks less crammed */
-.img {
+/* .img {
   padding-top: 4vh;
-}
+} */
 
-#firstHello {
-  font-family: 'Raleway', sans-serif;
+#backgroundText {
+  font-family: var(--font-family);
   font-size: 250px;
   font-weight: 400;
-  text-align: center;
-  /* padding: 10vh; */
-  /* position: relative;  */
   margin: 0 auto; 
-  text-align: center;
   color: rgba(28, 68, 212, 0.373);
-  /* opacity: 0.2; */
+  text-align: center;
 }
 
-#secondHello {
+#foregroundText {
   padding: 0;
   margin: 0;
   text-align: center;
   font-size: 150px;
   position: absolute; 
-  top: 250px;
+  top: 28vh;
   /* top: 1vh;  */
   width: 90%;
   color: rgb(172, 188, 226);
 }
 
-#thirdHello {
+#subtitle {
   color: rgb(172, 188, 226);
   font-size: 25px;
+  margin-bottom: 8vh;
+}
+
+#applyButton {
+  text-decoration: none; 
 }

@@ -1,0 +1,35 @@
+body {
+    background-color: var(--color-primary);
+}
+
+.gridParent {
+    justify-content: center;
+    grid-gap: 11.11%;
+}
+
+.titleStyle {
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 64px;
+    font-family: var(--font-family);
+    font-weight: 300;
+}
+
+.boxStyling {
+    display: flex;
+    width: 65vh;
+    height: 7vh;
+    align-items: center;
+    justify-content: left;
+}
+
+.buttonStyling {
+    background-color: var(--color-text);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+/* width={400} height={50} */

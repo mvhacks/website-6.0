@@ -47,8 +47,7 @@
 
 
 .textCenter {
-  /* text-align: left; */
-  background-color: #022f52;
+  background-color: var(--color-primary);
   padding-bottom: 40vh;
   padding-top: 10vh;
   text-align: center;
@@ -82,15 +81,24 @@
   top: 28vh;
   /* top: 1vh;  */
   width: 90%;
-  color: rgb(172, 188, 226);
+  color: var(--color-text);
 }
 
 #subtitle {
-  color: rgb(172, 188, 226);
+  color: var(--color-text);
   font-size: 25px;
   margin-bottom: 8vh;
 }
 
 #applyButton {
   text-decoration: none; 
+  background: var(--color-text);
+  color: var(--color-primary);
 }
+
+
+/* #applyButton:hover { text-decoration: none; }
+
+
+#applyButton:active { text-decoration: none; } */
+

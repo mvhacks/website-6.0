@@ -1,14 +1,11 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import * as React from 'react';
 
-import Layout from "../components/layout";
-import Seo from "../components/seo";
-import * as styles from "../components/index.module.css";
-import { Button, ButtonGroup } from '@chakra-ui/react';
+import Layout from '../components/layout';
+import Seo from '../components/seo';
+import './index.scss';
+import { Button } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
-import { buttonTheme } from "../components/buttonTheme";
-
+import theme from '../utils/customTheme';
 
 // const links = [
 //   {
@@ -73,63 +70,73 @@ import { buttonTheme } from "../components/buttonTheme";
 
 // const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`;
 
-const IndexPage = () => (
-  <ChakraProvider>
-    <Layout> {/* wrap entire thing in Layout tag in order to give it header + footer defined as layer */}
-      <Seo title="Home" />
-      {/* <StaticImage
-        src="../images/MVHacksLogoMV.png"
-        loading="eager"
-        height={350}
-        quality={95}
-        alt="MV Hacks logo"
-        style={{ margin: 20 }}
-      /> */}
-      <div className={styles.textCenter}> {/* this doesn't even center text, it left aligns it now cause I changed it. prob should rename after I figure more of the page layout out. also styles.center just access styling class called textCenter found in index.modules.css* /}
-        {/* display mvhacks image */}
-        <div id={styles.backgroundText}>
-          2023
-          <div id={styles.foregroundText}>
-            MV Hacks 5.0
+const IndexPage = () => {
+  return (
+    <ChakraProvider theme={theme}>
+      <Layout>
+        <Seo
+          title='Home'
+          children={undefined}
+        />
+        {/* <StaticImage
+          src="../images/MVHacksLogoMV.png"
+          loading="eager"
+          height={350}
+          quality={95}
+          alt="MV Hacks logo"
+          style={{ margin: 20 }}
+        /> */}
+        <div className='textCenter'>
+          <div id='backgroundText'>
+            2023
+            <div id='foregroundText'>MV Hacks 5.0</div>
+            <div id='subtitle'>
+              The hackathon for everyone. Especially beginners.
+            </div>
           </div>
-          <div id={styles.subtitle}>
-            The hackathon for everyone. Especially beginners.
-          </div>
+          <Button
+            variant='solid'
+            id='applyButton'
+            _hover={{ bg: 'blue.500', color: ' white' }}
+          >
+            <a href='#'>Apply today!</a>
+          </Button>
         </div>
-        {/* colorScheme='blue' */}
-        <Button variant={buttonTheme} id={styles.applyButton} _hover={{ bg: "blue.500", color: " white" }} >
-          <a href="https://cdn.akamai.steamstatic.com/steam/apps/1678830/capsule_616x353.jpg?t=1650474459">Apply today!</a>
-        </Button>
-      </div>
 
-      {/* <ul className={styles.list}>
-        {links.map(link => (
-          <li key={link.url} className={styles.listItem}>
-            <a
-              className={styles.listItemLink}
-              href={`${link.url}${utmParameters}`}
-            >
-              {link.text} ↗
-            </a>
-            <p className={styles.listItemDescription}>{link.description}</p>
-          </li>
-        ))}
-      </ul>
-      {moreLinks.map((link, i) => (
-        <React.Fragment key={link.url}>
-          <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-          {i !== moreLinks.length - 1 && <> · </>}
-        </React.Fragment>
-      ))} */}
-    </Layout>
-  </ChakraProvider >
-);
+        {/* <ul className={styles.list}>
+          {links.map(link => (
+            <li key={link.url} className={styles.listItem}>
+              <a
+                className={styles.listItemLink}
+                href={`${link.url}${utmParameters}`}
+              >
+                {link.text} ↗
+              </a>
+              <p className={styles.listItemDescription}>{link.description}</p>
+            </li>
+          ))}
+        </ul>
+        {moreLinks.map((link, i) => (
+          <React.Fragment key={link.url}>
+            <a href={`${link.url}${utmParameters}`}>{link.text}</a>
+            {i !== moreLinks.length - 1 && <> · </>}
+          </React.Fragment>
+        ))} */}
+      </Layout>
+    </ChakraProvider>
+  );
+};
 
 /**
  * Head export to define metadata for the page
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />;
+export const Head = () => (
+  <Seo
+    title='Home'
+    children={undefined}
+  />
+);
 
 export default IndexPage;

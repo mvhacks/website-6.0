@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
 
+:root {
+  --font-family: 'Raleway', sans-serif;
+  --border-radius: 4px;
+  --color-text: #ACBCFF;
+  --color-primary: #022f52;
+  --color-secondary: rgb(26, 56, 165);
+  /* --color-code-bg: rgb(26, 56, 165); */
+  --color-code: #8a6534;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  --font-lg: 18px;
+  --font-md: 16px;
+  --font-sm: 14px;
+  --font-sx: 12px;
+  --line-height-loose: 1.75;
+  --line-height-normal: 1.5;
+  --line-height-dense: 1.1;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 64px;
+  --size-content: 54rem;
+  --size-gutter: var(--space-5);
+  --size-gap: var(--space-6);
+}
+
 .list {
   display: grid;
   margin: 0;
@@ -47,9 +77,8 @@
 
 
 .textCenter {
-  background-color: var(--color-primary);
-  padding-bottom: 40vh;
-  padding-top: 10vh;
+  margin-bottom: 40vh;
+  margin-top: 10vh;
   text-align: center;
 } 
 
@@ -79,7 +108,6 @@
   font-size: 150px;
   position: absolute; 
   top: 28vh;
-  /* top: 1vh;  */
   width: 90%;
   color: var(--color-text);
 }

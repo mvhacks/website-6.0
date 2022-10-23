@@ -11,26 +11,20 @@ body {
     margin-top: 5vh;
     text-align: center;
     font-size: 64px;
-    font-family: var(--font-family);
-    color: var(--color-text);
-    font-weight: 300;
+    font-weight: 200;
 }
 
-.boxStyling {
-    display: flex;
-    width: 65vh;
-    height: 7vh;
-    align-items: center;
-    justify-content: left;
-}
+// .boxStyling {
+//     display: flex;
+//     width: 65vh;
+//     height: 7vh;
+//     align-items: center;
+//     justify-content: left;
+// }
 
-.buttonStyling {
-    background-color: var(--color-text);
-    color: var(--color-primary);
-    border: none;
-    border-radius: 5px;
-    font-size: 24px;
-    font-family: var(--font-family);
-    font-weight: 500;
-}
-/* width={400} height={50} */
+// .buttonStyling {
+//     border: none;
+//     border-radius: 5px;
+//     font-size: 24px;
+//     font-weight: 500;
+// }

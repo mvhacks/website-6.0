@@ -6,6 +6,7 @@ import './index.scss';
 import { Button } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../utils/customTheme';
+import { themeObj } from '../utils/customTheme';
 
 // const links = [
 //   {
@@ -86,11 +87,14 @@ const IndexPage = () => {
           alt="MV Hacks logo"
           style={{ margin: 20 }}
         /> */}
+                {/* style={{
+          background: themeObj.dark.palette.secondary.main,
+          color: themeObj.dark.palette.primary.main, */}
         <div className='textCenter'>
-          <div id='backgroundText'>
+          <div id='backgroundText' style={{color: themeObj.dark.palette.accent.main}}>
             2023
-            <div id='foregroundText'>MV Hacks 5.0</div>
-            <div id='subtitle'>
+            <div id='foregroundText' style={{color: themeObj.dark.palette.secondary.main}}>MV Hacks 5.0</div>
+            <div id='subtitle' style={{color: themeObj.dark.palette.secondary.main}}>
               The hackathon for everyone. Especially beginners.
             </div>
           </div>
@@ -102,26 +106,6 @@ const IndexPage = () => {
             <a href='#'>Apply today!</a>
           </Button>
         </div>
-
-        {/* <ul className={styles.list}>
-          {links.map(link => (
-            <li key={link.url} className={styles.listItem}>
-              <a
-                className={styles.listItemLink}
-                href={`${link.url}${utmParameters}`}
-              >
-                {link.text} ↗
-              </a>
-              <p className={styles.listItemDescription}>{link.description}</p>
-            </li>
-          ))}
-        </ul>
-        {moreLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-            {i !== moreLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))} */}
       </Layout>
     </ChakraProvider>
   );

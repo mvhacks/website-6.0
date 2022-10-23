@@ -22,8 +22,12 @@ const Dropdown = ({ title, content }: DropdownProps) => {
         onClick={toggleOpen}
         style={{
           zIndex: 10,
-          color: themeObj.dark.background,
-          background: themeObj.dark.text,
+          color: themeObj.dark.palette.primary.main,
+          background: themeObj.dark.palette.secondary.main,
+          marginTop: "5vh",
+          padding: "5vh",
+          fontWeight: 400,
+          fontSize: "20px",
         }}
       >
         {title}
@@ -31,8 +35,8 @@ const Dropdown = ({ title, content }: DropdownProps) => {
       <Collapse
         in={open}
         style={{
-          background: themeObj.dark.text,
-          color: themeObj.dark.background,
+          background: themeObj.dark.palette.secondary.main,
+          color: themeObj.dark.palette.primary.main,
           borderRadius: '4px',
           transform: 'translateY(-8px)',
         }}
@@ -41,6 +45,7 @@ const Dropdown = ({ title, content }: DropdownProps) => {
           style={{
             padding: '12px',
             paddingTop: '16px',
+            paddingBottom: "10px",
           }}
         >
           {content}

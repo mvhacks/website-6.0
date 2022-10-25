@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { themeObj } from '../utils/customTheme';
+import { themeObj, aTag } from '../utils/customTheme';
 
 const Navigation = () => {
     return (
@@ -16,7 +16,7 @@ const Navigation = () => {
                 style={{ margin: 0 }}
             /> */}
             <p id='title' style={{ color: themeObj.dark.palette.accent.main }}>MV Hacks</p>
-            <div className='links'>
+            <div className='links' style={aTag.a}>
                 {/* in vanilla js, you may use <a/> tag, but <Link/> is more efficient in this case because it keeps everything on the same page and so is faster */}
                 <Link to="/">
                     Home
@@ -25,7 +25,7 @@ const Navigation = () => {
                     FAQ
                 </Link>
             </div>
-        </nav>
+        </nav >
     );
 };
 

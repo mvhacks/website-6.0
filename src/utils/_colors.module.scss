@@ -1,9 +1,11 @@
 $primaryMain: #022f52;
 $secondaryMain: #ACBCFF;
 $accentMain: #1A38A5;
+$accentSecondary: rgba(28, 68, 212, 0.33);
 
 :export {
 	primaryMain: $primaryMain;
 	secondaryMain: $secondaryMain;
 	accentMain: $accentMain;
+	accentSecondary: $accentSecondary;
 }

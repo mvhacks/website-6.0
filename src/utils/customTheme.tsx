@@ -15,6 +15,7 @@ export const themeObj = {
       },
       accent: {
         main: colors.accentMain,
+        secondary: colors.accentSecondary,
       },
     },
   },

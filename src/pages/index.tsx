@@ -28,7 +28,7 @@ const IndexPage = () => {
           background: themeObj.dark.palette.secondary.main,
           color: themeObj.dark.palette.primary.main, */}
         <div className='textCenter'>
-          <div id='backgroundText' style={{color: themeObj.dark.palette.accent.main}}>
+          <div id='backgroundText' style={{color: themeObj.dark.palette.accent.secondary}}>
             2023
             <div id='foregroundText' style={{color: themeObj.dark.palette.secondary.main}}>MV Hacks 5.0</div>
             <div id='subtitle' style={{color: themeObj.dark.palette.secondary.main}}>

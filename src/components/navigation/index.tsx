@@ -23,18 +23,12 @@ const Navigation = () => {
         MV Hacks
       </p>
       <div className='links'>
-        <Link
-          to='/'
-          className='link'
-        >
-          Home
-        </Link>
-        <Link
-          to='/faq'
-          className='link'
-        >
-          FAQ
-        </Link>
+        <div className='link'>
+          <Link to='/'>Home</Link>
+        </div>
+        <div className='link'>
+          <Link to='/faq'>FAQ</Link>
+        </div>
       </div>
     </nav>
   );

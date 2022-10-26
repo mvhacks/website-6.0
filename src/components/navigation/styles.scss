@@ -1,10 +1,45 @@
 @import '../../utils/_colors.module.scss';
 
-.link {
-	color: $accentMain;
-	text-decoration: none;
-	&:hover {
-		color: $secondaryMain;
-		background-color: $accentMain;
+nav {
+	display: flex;
+	justify-content: space-between;
+	.links {
+		display: flex;
+		flex-direction: row;
+		gap: 6px;
+		.link {
+			color: $accentMain;
+			text-decoration: none;
+			position: relative;
+			overflow: hidden;
+			z-index: 1;
+			// width: fit-content;
+			height: fit-content;
+			border-radius: 4px;
+			transition: 0.25s;
+			a {
+				transition: 0.25s;
+				margin: 0;
+				&:hover {
+					color: $secondaryMain;
+				}
+			}
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				transition: 0.25s;
+				background: $accentMain;
+				width: 0%;
+				aspect-ratio: 1;
+				transform: translate(-50%, -50%);
+				border-radius: 100%;
+			}
+			&:hover::before {
+				width: 225%;
+			}
+		}
 	}
 }

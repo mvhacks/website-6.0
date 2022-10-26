@@ -1,6 +1,6 @@
 import React from 'react';
 import './layout.scss';
-import Navigation from '../Navigation';
+import Navigation from '../navigation';
 import { themeObj } from '../../utils/customTheme';
 
 interface LayoutProps {

@@ -132,6 +132,6 @@ const Faq = () => (
   </Layout >
 );
 
-export const Head = () => <Seo title="Page two" />;
+export const Head = () => <Seo title="FAQ" />;
 
 export default Faq;

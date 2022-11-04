@@ -12,6 +12,6 @@ const AboutTheTeam = () => (
     </Layout >
 );
 
-export const Head = () => <Seo title="About the team" />;
+export const Head = () => <Seo title="Team" />;
 
 export default AboutTheTeam;

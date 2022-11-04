@@ -1,33 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&family=Share+Tech&display=swap');
 
 :root {
   --font-family: 'Raleway', sans-serif;
+  --font-family-head: 'Share Tech', sans-serif;
   --border-radius: 4px;
-  // --color-text: #ACBCFF;
-  // --color-primary: #022f52;
-  // --color-secondary: rgb(26, 56, 165);
-  // /* --color-code-bg: rgb(26, 56, 165); */
-  // --color-code: #8a6534;
-  // --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-  //   sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  // --font-mono: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-  //   "Courier New", monospace;
-  // --font-lg: 18px;
-  // --font-md: 16px;
-  // --font-sm: 14px;
-  // --font-sx: 12px;
-  // --line-height-loose: 1.75;
-  // --line-height-normal: 1.5;
-  // --line-height-dense: 1.1;
-  // --space-1: 4px;
-  // --space-2: 8px;
-  // --space-3: 16px;
-  // --space-4: 24px;
-  // --space-5: 32px;
-  // --space-6: 64px;
-  // --size-content: 54rem;
-  // --size-gutter: var(--space-5);
-  // --size-gap: var(--space-6);
 }
 
 
@@ -48,11 +25,12 @@
 } */
 
 #backgroundText {
-  font-family: var(--font-family);
-  font-size: 250px;
-  font-weight: 400;
-  margin: 0 auto; 
+  font-family: var(--font-family-head);
+  font-size: 300px;
+  font-weight: 200;
+  margin-top: 100px auto; 
   text-align: center;
+  letter-spacing: 15px;
 }
 
 #foregroundText {
@@ -60,15 +38,17 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  font-size: 150px;
+  font-size: 175px;
   position: absolute; 
   top: 28vh;
   width: 100%;
-  letter-spacing: 15px;
+  letter-spacing: 25px;
   // color: var(--color-text);
 }
 
 #subtitle {
+  letter-spacing: normal;
+  font-family: var(--font-family);
   // color: var(--color-text);
   font-size: 25px;
   margin-bottom: 8vh;

@@ -63,7 +63,8 @@ const theme = extendTheme({
       // styles for the `body`
       fonts: {
         body: "'Raleway', sans-serif",
-        head: "'Raleway', sans-serif",
+        head: "'Share Tech', sans-serif",
+        // head: "'Raleway', sans-serif",
         footer: "'Raleway', sans-serif",
       },
       body: {

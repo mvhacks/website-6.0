@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Sonav Agarwal",
+        "title": "Lead Director",
+        "email": "sonav@mvhacks.io",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "website": "https://sonavagarwal.com",
+        "insta": "virtuosonav",
+        "linkedInUrl": ""
+    },
+    {
+        "name": "Olivia Lai",
+        "title": "Tech Director",
+        "email": "olivia@mvhacks.io",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "website": "http://oliviaslai.com",
+        "insta": "olivialaii",
+        "linkedInUrl": ""
+    },
+    {
+        "name": "Ashwin Talwalkar",
+        "title": "Event Director",
+        "email": "ashwint@mvhacks.io",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "website": "https://ashwin-t.github.io/Old-Website/",
+        "insta": "_Ashwin.t",
+        "linkedInUrl": ""
+    },
+    {
+        "name": "Sonav Agarwal",
+        "title": "Lead Director",
+        "email": "sonav@mvhacks.io",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "website": "https://sonavagarwal.com",
+        "insta": "virtuosonav",
+        "linkedInUrl": ""
+    },
+    {
+        "name": "Olivia Lai",
+        "title": "Tech Director",
+        "email": "olivia@mvhacks.io",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "website": "http://oliviaslai.com",
+        "insta": "olivialaii",
+        "linkedInUrl": ""
+    },
+    {
+        "name": "Ashwin Talwalkar",
+        "title": "Event Director",
+        "email": "ashwint@mvhacks.io",
+        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "website": "https://ashwin-t.github.io/Old-Website/",
+        "insta": "_Ashwin.t",
+        "linkedInUrl": ""
+    }
+]

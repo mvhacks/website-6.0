@@ -1,7 +1,14 @@
-$primaryMain: #022f52;
-$secondaryMain: #ACBCFF;
-$accentMain: #1A38A5;
-$accentSecondary: rgba(28, 68, 212, 0.33);
+// old theme:
+// $primaryMain: #022f52;
+// $secondaryMain: #ACBCFF;
+// $accentMain: #1A38A5;
+// $accentSecondary: rgba(28, 68, 212, 0.33);
+
+// new theme:
+$primaryMain: #0d173f;
+$secondaryMain: #c2b4ff;
+$accentMain: #1e3684;
+$accentSecondary: #1e368499;
 
 :export {
 	primaryMain: $primaryMain;

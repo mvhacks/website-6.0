@@ -3,7 +3,7 @@ module.exports = {
     title: `MV Hacks 6.0`,
     description: `The hackathon for everyone. Especially beginners. Apply today.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`
     // menuLinks: [
     //   {
     //     name: 'home',
@@ -21,8 +21,8 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -38,8 +38,8 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/MVHacksLogoMV.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/MVHacksLogoMV.png` // This path is relative to the root of the site.
+      }
     },
     {
       resolve: '@chakra-ui/gatsby-plugin',
@@ -53,8 +53,8 @@ module.exports = {
          * @property {boolean} [isUsingColorMode=true]
          * if false, this plugin will not use <ColorModeProvider />
          */
-        isUsingColorMode: true,
-      },
-    },
-  ],
-}
+        isUsingColorMode: true
+      }
+    }
+  ]
+};

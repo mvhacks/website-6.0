@@ -1,6 +1,7 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import { Link } from "gatsby";
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
+import './styles.scss';
 
 const Header = ({ siteTitle }) => (
   <header
@@ -9,14 +10,14 @@ const Header = ({ siteTitle }) => (
       padding: `var(--space-4) var(--size-gutter)`,
       display: `flex`,
       alignItems: `center`,
-      justifyContent: `space-between`,
+      justifyContent: `space-between`
     }}
   >
     <Link
       to="/"
       style={{
         fontSize: `var(--font-sm)`,
-        textDecoration: `none`,
+        textDecoration: `none`
       }}
     >
       {siteTitle}
@@ -31,11 +32,11 @@ const Header = ({ siteTitle }) => (
 );
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.string
 };
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: ``
 };
 
 export default Header;

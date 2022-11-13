@@ -16,17 +16,23 @@ const Navigation = () => {
         alt="MV Hacks logo"
         style={{ margin: 0 }}
       /> */}
-      <Link id="title" style={{ color: themeObj.dark.palette.accent.main }} to='/'>MV Hacks</Link>
-      
-      <div className='links'>
-        <div className='link'>
-          <Link to='/'>Home</Link>
+      <Link
+        id="title"
+        style={{ color: themeObj.dark.palette.accent.main }}
+        to="/"
+      >
+        MV Hacks
+      </Link>
+
+      <div className="links">
+        <div className="link">
+          <Link to="/">Home</Link>
         </div>
-        <div className='link'>
-          <Link to='/faq'>FAQ</Link>
+        <div className="link">
+          <Link to="/faq">FAQ</Link>
         </div>
-        <div className='link'>
-          <Link to='/about-the-team'>Team</Link>
+        <div className="link">
+          <Link to="/about-the-team">Team</Link>
         </div>
       </div>
     </nav>

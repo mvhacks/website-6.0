@@ -6,14 +6,14 @@ import './index.scss';
 import { Button } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../utils/customTheme';
-import { themeObj, buttonObj} from '../utils/customTheme';
+import { themeObj } from '../utils/customTheme';
 
 const IndexPage = () => {
   return (
     <ChakraProvider theme={theme}>
       <Layout>
         <Seo
-          title='Home'
+          title="Home"
           children={undefined}
         />
         {/* <StaticImage
@@ -24,23 +24,34 @@ const IndexPage = () => {
           alt="MV Hacks logo"
           style={{ margin: 20 }}
         /> */}
-                {/* style={{
+        {/* style={{
           background: themeObj.dark.palette.secondary.main,
           color: themeObj.dark.palette.primary.main, */}
-        <div className='textCenter'>
-          <div id='backgroundText' style={{color: themeObj.dark.palette.accent.secondary}}>
+        <div className="center">
+          <div
+            id="backgroundText"
+            style={{ color: themeObj.dark.palette.accent.main }}
+          >
             2023
-            <div id='foregroundText' style={{color: themeObj.dark.palette.secondary.main}}>MV Hacks 5.0</div>
-            <div id='subtitle' style={{color: themeObj.dark.palette.secondary.main}}>
+            <div
+              id="foregroundText"
+              style={{ color: themeObj.dark.palette.secondary.main }}
+            >
+              MV Hacks 5.0
+            </div>
+            <div
+              id="subtitle"
+              style={{ color: themeObj.dark.palette.secondary.main }}
+            >
               The hackathon for everyone. Especially beginners.
             </div>
           </div>
           <Button
-            variant='outline'
+            variant="outline"
             // id='applyButton'
             // _hover={{ bg: 'blue.500', color: ' white' }}
           >
-            <a href='#'>Apply today!</a>
+            <a href="#">Apply today!</a>
           </Button>
         </div>
       </Layout>
@@ -55,7 +66,7 @@ const IndexPage = () => {
  */
 export const Head = () => (
   <Seo
-    title='Home'
+    title="Home"
     children={undefined}
   />
 );

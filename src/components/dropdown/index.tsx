@@ -16,18 +16,17 @@ const Dropdown = ({ title, content }: DropdownProps) => {
   };
 
   return (
-    <div className='dropdown'>
+    <div className="dropdown">
       <Button
-        className='dropdown-header'
+        className="dropdown-header"
         onClick={toggleOpen}
         style={{
           zIndex: 10,
           color: themeObj.dark.palette.primary.main,
           background: themeObj.dark.palette.secondary.main,
-          marginTop: "5vh",
-          padding: "5vh",
+          padding: '5vh',
           fontWeight: 400,
-          fontSize: "20px",
+          fontSize: '20px'
         }}
       >
         {title}
@@ -38,14 +37,14 @@ const Dropdown = ({ title, content }: DropdownProps) => {
           background: themeObj.dark.palette.secondary.main,
           color: themeObj.dark.palette.primary.main,
           borderRadius: '4px',
-          transform: 'translateY(-8px)',
+          transform: 'translateY(-8px)'
         }}
       >
         <div
           style={{
             padding: '12px',
             paddingTop: '16px',
-            paddingBottom: "10px",
+            paddingBottom: '10px'
           }}
         >
           {content}

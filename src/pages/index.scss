@@ -8,10 +8,11 @@
 }
 
 
-.textCenter {
-  margin-bottom: 40vh;
-  margin-top: 10vh;
-  text-align: center;
+.center {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 } 
 
 /* .intro {
@@ -40,9 +41,11 @@
   text-align: center;
   font-size: 175px;
   position: absolute; 
-  top: 28vh;
-  width: 100%;
-  letter-spacing: 25px;
+  top: 255px;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  line-height: 8rem;
   // color: var(--color-text);
 }
 
@@ -51,7 +54,7 @@
   font-family: var(--font-family);
   // color: var(--color-text);
   font-size: 25px;
-  margin-bottom: 8vh;
+  margin-bottom: 4rem;
 }
 
 // #applyButton {

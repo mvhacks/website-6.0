@@ -8,17 +8,16 @@ export const themeObj = {
   dark: {
     palette: {
       primary: {
-        main: colors.primaryMain,
+        main: colors.primaryMain
       },
       secondary: {
-        main: colors.secondaryMain,
+        main: colors.secondaryMain
       },
       accent: {
-        main: colors.accentMain,
-        secondary: colors.accentSecondary,
-      },
-    },
-  },
+        main: colors.accentMain
+      }
+    }
+  }
 };
 
 export const buttonObj = {
@@ -26,15 +25,15 @@ export const buttonObj = {
     // 1. We can update the base styles
     baseStyle: {
       fontWeight: 'semibold', // Normally, it is "semibold"
-      fontSize: 'lg',
+      fontSize: 'lg'
     },
     // 2. We can add a new button size or extend existing
     sizes: {
       xl: {
         h: '56px',
         fontSize: 'lg',
-        px: '32px',
-      },
+        px: '32px'
+      }
     },
     // 3. We can add a new visual variant
     variants: {
@@ -44,34 +43,33 @@ export const buttonObj = {
         color: themeObj.dark.palette.secondary.main,
         _hover: {
           color: themeObj.dark.palette.primary.main,
-          bg: themeObj.dark.palette.secondary.main,
-        },
-      },
-    },
-  },
+          bg: themeObj.dark.palette.secondary.main
+        }
+      }
+    }
+  }
 };
 
 const theme = extendTheme({
   semanticTokens: {
-    ...themeObj,
+    ...themeObj
   },
   components: {
-    ...buttonObj,
+    ...buttonObj
   },
   styles: {
     global: {
       // styles for the `body`
       fonts: {
         body: "'Raleway', sans-serif",
-        head: "'Share Tech', sans-serif",
-        // head: "'Raleway', sans-serif",
-        footer: "'Raleway', sans-serif",
+        head: "'Raleway', sans-serif",
+        footer: "'Raleway', sans-serif"
       },
       body: {
-        color: '#ACBCFF',
-      },
-    },
-  },
+        color: '#ACBCFF'
+      }
+    }
+  }
 });
 
 export default theme;

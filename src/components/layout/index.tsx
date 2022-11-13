@@ -10,17 +10,21 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <div
-      className='layout'
+      className="layout"
       style={{ background: themeObj.dark.palette.primary.main }}
     >
-      <div className='content-wrapper'>
+      <div className="content-wrapper">
         <Navigation />
-        <div className='content'>{children}</div>
+        <div className="content">{children}</div>
       </div>
-      <footer className='footer' style={{ background: themeObj.dark.palette.secondary.main, color: themeObj.dark.palette.primary.main }}>
-        <p>
-          center pic here of mvhacks 4.5 winners, instagram, anything else??
-        </p>
+      <footer
+        className="footer"
+        style={{
+          background: themeObj.dark.palette.secondary.main,
+          color: themeObj.dark.palette.primary.main
+        }}
+      >
+        <p>center pic here of mvhacks 4.5 winners, instagram, anything else??</p>
       </footer>
     </div>
   );

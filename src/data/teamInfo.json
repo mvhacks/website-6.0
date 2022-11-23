@@ -1,56 +1,68 @@
 [
     {
         "name": "Sonav Agarwal",
-        "title": "Lead Director",
+        "title": "Tech Director",
         "email": "sonav@mvhacks.io",
-        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
         "website": "https://sonavagarwal.com",
         "insta": "virtuosonav",
-        "linkedInUrl": ""
+        "linkedInUrl": "",
+        "isDirector": true,
+        "team": "tech"
     },
     {
         "name": "Olivia Lai",
-        "title": "Tech Director",
+        "title": "Event Director",
         "email": "olivia@mvhacks.io",
-        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
         "website": "http://oliviaslai.com",
         "insta": "olivialaii",
-        "linkedInUrl": ""
+        "linkedInUrl": "",
+        "isDirector": true,
+        "team": "event"
     },
     {
         "name": "Ashwin Talwalkar",
-        "title": "Event Director",
+        "title": "Outreach Director",
         "email": "ashwint@mvhacks.io",
-        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
         "website": "https://ashwin-t.github.io/Old-Website/",
         "insta": "_Ashwin.t",
-        "linkedInUrl": ""
+        "linkedInUrl": "",
+        "isDirector": true,
+        "team": "outreach"
     },
     {
-        "name": "Sonav Agarwal",
+        "name": "Another person",
         "title": "Lead Director",
         "email": "sonav@mvhacks.io",
-        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
         "website": "https://sonavagarwal.com",
         "insta": "virtuosonav",
-        "linkedInUrl": ""
+        "linkedInUrl": "",
+        "isDirector": true,
+        "team": "lead"
     },
     {
-        "name": "Olivia Lai",
-        "title": "Tech Director",
+        "name": "Anotherx2 Person",
+        "title": "Event Team",
         "email": "olivia@mvhacks.io",
-        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
         "website": "http://oliviaslai.com",
         "insta": "olivialaii",
-        "linkedInUrl": ""
+        "linkedInUrl": "",
+        "isDirector": false,
+        "team": "event"
     },
     {
-        "name": "Ashwin Talwalkar",
-        "title": "Event Director",
+        "name": "Anotherx3 Person",
+        "title": "Developer",
         "email": "ashwint@mvhacks.io",
-        "imgSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Emblem-person-blue.svg/1024px-Emblem-person-blue.svg.png",
+        "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
         "website": "https://ashwin-t.github.io/Old-Website/",
         "insta": "_Ashwin.t",
-        "linkedInUrl": ""
+        "linkedInUrl": "",
+        "isDirector": false, 
+        "team": "tech"
     }
 ]

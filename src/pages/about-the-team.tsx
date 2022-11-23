@@ -7,38 +7,25 @@ import Layout from '../components/layout';
 import Seo from '../components/seo';
 
 import { themeObj } from '../utils/customTheme';
+import TeamCards from '../components/teamCards';
+
+const leadTeam = people.filter(a => a.isDirector == true);
+const techTeam = people.filter(a => a.team == "tech");
+const eventTeam = people.filter(a => a.team == "event");
+const outreachTeam = people.filter(a => a.team == "outreach");
 
 const AboutTheTeam = () => (
   <Layout>
-    <h1 style={{ color: themeObj.dark.palette.secondary.main }}>Hi.</h1>
-    <h1
+    <div>
+      <h1
       className="titleStyle"
       style={{ color: themeObj.dark.palette.secondary.main }}
-    >
-      this page isn't done yet. please go away.
+      >
+      About the team!
       <br />
-      ok ( first i change some things tho)
-    </h1>
-    <div className="inner">
-      {people &&
-        people.map((person, index) => (
-          <div
-            key={`person-${index}`}
-            className="box"
-            style={{
-              backgroundColor: themeObj.dark.palette.secondary.main,
-              color: themeObj.dark.palette.accent.main
-            }}
-          >
-            <img
-              src={person.imgSrc}
-              style={{ aspectRatio: '1/1', height: '30vh' }}
-              alt="profile"
-            />
-            <h3>{person.name}</h3>
-          </div>
-        ))}
-    </div>
+      </h1>
+    </div> 
+    <TeamCards people={leadTeam} />
   </Layout>
 );
 

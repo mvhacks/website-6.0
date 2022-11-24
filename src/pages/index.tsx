@@ -7,8 +7,15 @@ import { Button } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../utils/customTheme';
 import { themeObj } from '../utils/customTheme';
+// import {useState} from 'react';
 
 const IndexPage = () => {
+  //   const [isActive, setIsActive] = useState(false);
+
+  // const handleClick = () => {
+  //   // toggle
+  //   setIsActive(current => !current);
+  // };
   return (
     <ChakraProvider theme={theme}>
       <Layout>
@@ -48,6 +55,8 @@ const IndexPage = () => {
           </div>
           <Button
             variant="outline"
+            // style={{background: isActive ? themeObj.dark.palette.secondary.main: "green"}}
+            // onFocus={handleClick}
             // id='applyButton'
             // _hover={{ bg: 'blue.500', color: ' white' }}
           >

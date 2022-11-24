@@ -11,7 +11,8 @@ export const themeObj = {
         main: colors.primaryMain
       },
       secondary: {
-        main: colors.secondaryMain
+        main: colors.secondaryMain,
+        secondary: colors.secondarySecondary
       },
       accent: {
         main: colors.accentMain
@@ -43,7 +44,13 @@ export const buttonObj = {
         color: themeObj.dark.palette.secondary.main,
         _hover: {
           color: themeObj.dark.palette.primary.main,
-          bg: themeObj.dark.palette.secondary.main
+          bg: themeObj.dark.palette.secondary.main,
+          boxShadow: '0 0 2px 5px #1e3684',
+        },
+        _active: {
+          color: themeObj.dark.palette.primary.main,
+          bg: themeObj.dark.palette.secondary.main,
+          boxShadow: '0 0 2px 4px #1e3684',
         }
       }
     }

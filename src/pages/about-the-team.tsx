@@ -25,7 +25,8 @@ const AboutTheTeam = () => (
       <br />
       </h1>
     </div> 
-    <TeamCards people={leadTeam} />
+    <TeamCards people={leadTeam} team={"Team Leads"} />
+    <TeamCards people={techTeam} team={"Tech Team"} />
   </Layout>
 );
 

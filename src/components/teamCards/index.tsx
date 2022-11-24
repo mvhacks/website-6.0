@@ -15,13 +15,25 @@ interface Person {
 }
 
 interface Props {
-  people: Person[];
+    people: Person[];
+    team: String;
 }
 
 // people = {[efief: je, iefeoif:efew, etc]}
-const TeamCards = ({ people }: Props) => {
+const TeamCards = ({ people, team }: Props) => {
 
-  return (
+    return (
+    <>
+    <h1  style={{
+                textAlign: "left",
+                color: themeObj.dark.palette.secondary.main,
+                marginTop: "10vh",
+                marginBottom: "5vh",
+                marginLeft: "3vh",
+                fontSize: "56px",
+                fontWeight: "300",
+            }}
+            >{team}</h1>
     <div className="inner">
       {people &&
         people.map((person, index) => (
@@ -31,7 +43,8 @@ const TeamCards = ({ people }: Props) => {
             style={{
                 backgroundColor: themeObj.dark.palette.secondary.main,
                 color: themeObj.dark.palette.accent.main,
-                outlineColor: person.isDirector ? themeObj.dark.palette.secondary.main : themeObj.dark.palette.primary.main,
+                outlineColor: person.isDirector ? themeObj.dark.palette.secondary.secondary: themeObj.dark.palette.primary.main,
+                // E2FCEF
                 outlineWidth: "5px",
                 outlineStyle: "double"
             }}
@@ -46,6 +59,7 @@ const TeamCards = ({ people }: Props) => {
           </div>
         ))}
     </div>
+    </>
   );
 };
 

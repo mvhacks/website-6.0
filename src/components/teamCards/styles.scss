@@ -1,16 +1,13 @@
 .inner {
     display: flex;
+    width: auto;
     column-gap: 10vh;
-    justify-content: left;
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    margin-left: 16vh;
-    margin-right: 16vh;
-    // padding-left: 16vh;
-    // padding-right: 16vh;
-    margin-bottom: 10vh;
 }
 
 .box {
     padding-bottom: 5vh;
+    margin-bottom: 10vh;
 }

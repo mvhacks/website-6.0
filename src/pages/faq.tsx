@@ -53,7 +53,7 @@ const Faq = () => (
   <Layout>
     <h1
       className="titleStyle"
-      style={{ color: themeObj.dark.palette.secondary.main }}
+      style={{ color: themeObj.dark.palette.secondary.main, fontSize: "5vw" }}
     >
       FAQ
     </h1>

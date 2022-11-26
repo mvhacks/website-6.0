@@ -17,13 +17,13 @@ const leadTeam = people.filter(a => a.isDirector == true);
 const techTeam = people.filter(a => a.team == "tech");
 const eventTeam = people.filter(a => a.team == "event");
 const outreachTeam = people.filter(a => a.team == "outreach");
-const t = "test";
+
 const AboutTheTeam = () => (
   <Layout>
     <div>
       <h1
       className="titleStyle"
-      style={{ color: themeObj.dark.palette.secondary.main, marginBottom: "4vh" }}
+      style={{ color: themeObj.dark.palette.secondary.main, marginBottom: "4vh", fontSize: "5vw" }}
       >
       About the team!
       <br />

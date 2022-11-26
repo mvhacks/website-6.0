@@ -33,10 +33,10 @@ const TeamCards = ({ people, team }: Props) => {
       <>
       <AccordionItem marginBottom="10vh" borderStyle="none">
         <h2 style={{color: themeObj.dark.palette.secondary.main}}>
-          <AccordionButton style={{width: "30%", marginBottom: "10vh", outline: "4px inset", outlineColor: themeObj.dark.palette.secondary.main}}  _disabled={{background: themeObj.dark.palette.secondary.main, color: themeObj.dark.palette.primary.main}} _expanded={{ bg: themeObj.dark.palette.secondary.main, color: themeObj.dark.palette.primary.main, outlineColor: themeObj.dark.palette.primary.main }}>
+          <AccordionButton style={{width: "27%", marginBottom: "10vh", outline: "4px inset", outlineColor: themeObj.dark.palette.secondary.main}}  _disabled={{background: themeObj.dark.palette.secondary.main, color: themeObj.dark.palette.primary.main}} _expanded={{ bg: themeObj.dark.palette.secondary.main, color: themeObj.dark.palette.primary.main, outlineColor: themeObj.dark.palette.primary.main }}>
               <Box style={{    
               textAlign: "left",
-              fontSize: "3.5vw",
+              fontSize: "3vw",
               fontWeight: "300",
               marginRight: "5vh",
               outlineColor: themeObj.dark.palette.secondary.main,

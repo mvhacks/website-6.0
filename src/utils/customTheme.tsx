@@ -45,12 +45,11 @@ export const buttonObj = {
         _hover: {
           color: themeObj.dark.palette.primary.main,
           bg: themeObj.dark.palette.secondary.main,
-          boxShadow: '0 0 2px 5px #1e3684',
         },
         _active: {
           color: themeObj.dark.palette.primary.main,
           bg: themeObj.dark.palette.secondary.main,
-          boxShadow: '0 0 2px 4px #1e3684',
+          opacity: 0.85,
         }
       }
     }

@@ -43,7 +43,6 @@ const TeamCards = ({ people, team }: Props) => {
           <AccordionButton
             onClick={() => setOpen((prev) => !prev)}
             style={{
-              width: '250px',
               outline: 'none',
               border: `2px solid ${themeObj.dark.palette.secondary.main}`,
               borderRadius: 6,

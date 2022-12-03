@@ -31,6 +31,7 @@ const AboutTheTeam = () => (
       defaultIndex={[0]}
       allowToggle
       allowMultiple
+      className="team-accordion"
       style={{ borderStyle: 'none' }}
     >
       <TeamCards

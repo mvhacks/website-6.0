@@ -2,16 +2,11 @@
 
 .inner {
     display: flex;
-    width: auto;
-    column-gap: 10vh;
+    width: 100%;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-}
-
-.box {
-    padding-bottom: 5vh;
-    margin-bottom: 10vh;
+    gap: 75px;
 }
 
 .image {

@@ -36,17 +36,15 @@ const TeamCards = ({ people, team }: Props) => {
   return (
     <>
       <AccordionItem
-        marginBottom={`${marginAmount}px`}
         borderStyle="none"
+        className="accordion-item"
       >
         <h2 style={{ color: themeObj.dark.palette.secondary.main }}>
           <AccordionButton
             onClick={() => setOpen((prev) => !prev)}
+            className="team-card-button"
             style={{
-              outline: 'none',
               border: `2px solid ${themeObj.dark.palette.secondary.main}`,
-              borderRadius: 6,
-              transition: '0.15s',
               marginBottom: `${open ? marginAmount : 0}px`
             }}
             _disabled={{
@@ -70,12 +68,12 @@ const TeamCards = ({ people, team }: Props) => {
             >
               {team}
             </Box>
-            <AccordionIcon style={{ scale: '150%' }} />
+            <AccordionIcon style={{ scale: '150%' }}></AccordionIcon>
           </AccordionButton>
         </h2>
         <AccordionPanel>
           <div className="inner">
-            {people &&
+            {people ? (
               people.map((person, index) => (
                 <div
                   key={`person-${index}`}
@@ -86,23 +84,25 @@ const TeamCards = ({ people, team }: Props) => {
                     outlineColor: person.isDirector
                       ? themeObj.dark.palette.secondary.secondary
                       : themeObj.dark.palette.primary.main,
-                    outlineWidth: '5px',
-                    outlineStyle: 'double'
+                    borderRadius: '4px',
+                    overflow: 'hidden'
                   }}
                 >
-                  <img
-                    src={person.imgSrc}
-                    style={{ aspectRatio: '1/1', height: '30vh' }}
-                    alt="profile"
-                    className="image"
-                  />
-                  <div className="middle">
-                    <div className="opaqueText">{person.title}</div>
+                  <div className="img-wrapper">
+                    <img
+                      src={person.imgSrc}
+                      style={{ aspectRatio: '1/1', height: '200px' }}
+                      alt="profile"
+                      className="image"
+                    />
+                    <div className="middle">{person.title}</div>
                   </div>
-                  <br />
-                  <h2 className="nameText">{person.name}</h2>
+                  <h2 className="name-text">{person.name}</h2>
                 </div>
-              ))}
+              ))
+            ) : (
+              <span>No Images</span>
+            )}
           </div>
         </AccordionPanel>
       </AccordionItem>

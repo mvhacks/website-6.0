@@ -2,5 +2,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding-left: 4rem;
+  border-style: none;
+	display: flex;
+	flex-direction: column;
+	$gap: 32px;
+	padding-left: $gap;
+	padding-right: $gap;
+	gap: $gap;
+	align-items: center;
 }

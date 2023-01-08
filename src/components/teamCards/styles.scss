@@ -6,7 +6,7 @@
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
-    gap: 75px;
+    gap: 30px;
 }
 
 .image {
@@ -18,19 +18,31 @@
   backface-visibility: hidden;
 }
 
-.middle {
-  transition: .88s ease;
-  opacity: 0;
-  position: absolute;
-  margin-left: 10vh;
-  height: 60vh;
-  justify-content: center;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.img-wrapper {
+  position: relative;
 }
 
-.box:hover .image {
-  opacity: 0.3;
+.box {
+  cursor: pointer;
+}
+
+.middle {
+  transition: 0.2s ease;
+  color: rgb(210, 210, 210);
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
 }
 
 .box:hover .middle {
@@ -51,7 +63,25 @@
   font-weight: 300;
 }
 
-.nameText {
-    font-size: 18px;
-    font-weight: 400;
+.name-text {
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.team-card-button {
+  outline: none;
+  border-radius: 6px;
+  transition: 0.15s;
+  width: 375px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

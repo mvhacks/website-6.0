@@ -37,7 +37,7 @@ const IndexPage = () => {
         <div className="center">
           <div
             id="backgroundText"
-            style={{ color: themeObj.dark.palette.accent.main }}
+            style={{ color: themeObj.dark.palette.secondary.secondary }}
           >
             2023
             <div
@@ -55,10 +55,6 @@ const IndexPage = () => {
           </div>
           <Button
             variant="outline"
-            // style={{background: isActive ? themeObj.dark.palette.secondary.main: "green"}}
-            // onFocus={handleClick}
-            // id='applyButton'
-            // _hover={{ bg: 'blue.500', color: ' white' }}
           >
             <a href="#">Apply today!</a>
           </Button>

@@ -5,7 +5,7 @@ import './styles.scss';
 
 const Navigation = () => {
   return (
-    <nav style={{ backgroundColor: themeObj.dark.palette.secondary.main }}>
+    <nav style={{ backgroundColor: themeObj.dark.palette.primary.main }}>
       {/* need to add static image logo to nav bar as header instead of using text */}
       {/* <StaticImage
         src="../images/MVHacksLogoMV.png"

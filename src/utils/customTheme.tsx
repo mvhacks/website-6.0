@@ -40,11 +40,11 @@ export const buttonObj = {
     variants: {
       outline: {
         border: '2px solid',
-        borderColor: themeObj.dark.palette.secondary.main,
-        color: themeObj.dark.palette.secondary.main,
+        borderColor: themeObj.dark.palette.accent.main,
+        color: themeObj.dark.palette.accent.main,
         _hover: {
           color: themeObj.dark.palette.primary.main,
-          bg: themeObj.dark.palette.secondary.main,
+          bg: themeObj.dark.palette.accent.main,
         },
         _active: {
           color: themeObj.dark.palette.primary.main,
@@ -72,7 +72,7 @@ const theme = extendTheme({
         footer: "'Raleway', sans-serif"
       },
       body: {
-        color: '#ACBCFF'
+        color: '#ffffff'
       }
     }
   }

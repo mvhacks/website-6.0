@@ -80,9 +80,9 @@ const TeamCards = ({ people, team }: Props) => {
                   className="box"
                   style={{
                     backgroundColor: themeObj.dark.palette.secondary.main,
-                    color: themeObj.dark.palette.accent.main,
+                    color: themeObj.dark.palette.primary.main,
                     outlineColor: person.isDirector
-                      ? themeObj.dark.palette.secondary.secondary
+                      ? themeObj.dark.palette.secondary.main
                       : themeObj.dark.palette.primary.main,
                     borderRadius: '4px',
                     overflow: 'hidden'

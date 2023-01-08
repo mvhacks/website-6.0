@@ -2,6 +2,8 @@ import React from 'react';
 import './layout.scss';
 import Navigation from '../navigation';
 import { themeObj } from '../../utils/customTheme';
+import insta_logo from '../../images/insta_logo.png';
+import { Button } from '@chakra-ui/react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -20,11 +22,23 @@ const Layout = ({ children }: LayoutProps) => {
       <footer
         className="footer"
         style={{
-          background: themeObj.dark.palette.secondary.main,
-          color: themeObj.dark.palette.primary.main
+          background: themeObj.dark.palette.primary.main,
+          color: themeObj.dark.palette.secondary.main,
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
         }}
       >
-        <p>center pic here of mvhacks 4.5 winners, instagram, anything else??</p>
+        <a href="https://www.instagram.com/mvhacks/" target="_blank" style={{ width: "100%" }}> 
+          <img src={insta_logo} alt="logo" style={{width: "4vh", marginLeft:"auto", marginRight:"auto"}}/>
+        </a>
+        <Button
+          variant="outline"
+          style={{marginTop: "15px"}}
+          >
+            <a href="https://mvhacks-4-5.devpost.com/?" target="_blank">Check out our 4.5 winners!</a>
+        </Button>
       </footer>
     </div>
   );

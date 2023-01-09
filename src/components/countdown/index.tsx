@@ -10,10 +10,10 @@ interface timeProps {
 }
 
 const getTimeLeft = ({ currentTime, timeOfEvent }: timeProps) => {
-    const timeDifferenceMinutes = (currentTime.getTime() - timeOfEvent.getTime()) / 1000 * 60; // divide by 1000 x 60 bc it's in milliseconds
-    const daysLeft = timeDifferenceMinutes % (60 * 24); //  minutes in an hour x hours in a day
-    const hoursLeft = (timeDifferenceMinutes - daysLeft * 60 * 24) % 60;
-    const minutesLeft = (timeDifferenceMinutes - daysLeft * 60 * 24 - hoursLeft * 60);
+    const timeDifferenceMinutes = (timeOfEvent.getTime() - currentTime.getTime()) / (1000 * 60); // divide by 1000 x 60 bc it's in milliseconds
+    const daysLeft = Math.floor(timeDifferenceMinutes / (60 * 24)); //  minutes in an hour x hours in a day
+    const hoursLeft = Math.floor((timeDifferenceMinutes - daysLeft * 60 * 24) / 60);
+    const minutesLeft = Math.ceil((timeDifferenceMinutes - daysLeft * 60 * 24 - hoursLeft * 60));
 
     return [daysLeft, hoursLeft, minutesLeft];
 }
@@ -26,29 +26,22 @@ interface eventDateProps {
 }
 
 const Countdown = ({ year, month, day, hour }: eventDateProps) => {
-    // const [year, month, day] = eventDate;
-    console.log(year, month, day);
-    const timeOfEvent = new Date(year, month, day); 
-    const [currentTime, setCurrentTime] = useState(new Date());
-    // const currentTime = new Date();
+    const timeOfEvent = new Date(year, month, day, hour, 0, 0); 
 
+    const currentTime = new Date()
     const [timeLeft, setTimeLeft] = useState(getTimeLeft({currentTime, timeOfEvent}))
-    // const [daysLeft, hoursLeft, minutesLeft] = getTimeLeft({currentTime, timeOfEvent});
-    // const [days, setDays] = useState(daysLeft);
-    // const [hours, setHours] = useState(hoursLeft);
-    // const [minutes, setMinutes] = useState(minutesLeft);
-    const [time, setTime] = useState(60); // set the initial time to 60 seconds
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentTime(() => new Date());
-            setTimeLeft(() => getTimeLeft({currentTime, timeOfEvent}));
-    }, 60000); // run the interval every 60000 milliseconds (1 minute)
+            const currentTime = new Date()
+            setTimeLeft(() => getTimeLeft({ currentTime, timeOfEvent }));
+        }, 1000); // run the interval every 1000 milliseconds (1 second)
+        return () => clearInterval(interval);
     }, []); // only run the effect once
 
     return (
     <div style={{padding:"30vh", background: themeObj.dark.palette.primary.main, color: themeObj.dark.palette.secondary.main}}>
-        {timeLeft[0]} days {timeLeft[1]} hours {timeLeft[2]} seconds remaining
+        {timeLeft[0]} days {timeLeft[1]} hours {timeLeft[2]} minutes remaining
     </div>
     );
 };

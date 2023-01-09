@@ -45,6 +45,7 @@ const TeamCards = ({ people, team }: Props) => {
             className="team-card-button"
             style={{
               border: `2px solid ${themeObj.dark.palette.secondary.main}`,
+              transition: '0.15s',
               marginBottom: `${open ? marginAmount : 0}px`
             }}
             _disabled={{

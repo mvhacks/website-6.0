@@ -7,6 +7,7 @@ import { Button } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../utils/customTheme';
 import { themeObj } from '../utils/customTheme';
+import Countdown from '../components/countdown';
 // import {useState} from 'react';
 
 const IndexPage = () => {
@@ -58,6 +59,7 @@ const IndexPage = () => {
           >
             <a href="#">Apply today!</a>
           </Button>
+          <Countdown year={2023} month={1} day={1} hour={9}></Countdown>
         </div>
       </Layout>
     </ChakraProvider>

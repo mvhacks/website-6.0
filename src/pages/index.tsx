@@ -38,7 +38,7 @@ const IndexPage = () => {
         <div className="center">
           <div
             id="backgroundText"
-            style={{ color: themeObj.dark.palette.secondary.secondary }}
+            style={{ color: themeObj.dark.palette.accent.secondary }}
           >
             2023
             <div

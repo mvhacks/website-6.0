@@ -40,9 +40,37 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
     }, []); // only run the effect once
 
     return (
-    <div style={{padding:"30vh", background: themeObj.dark.palette.primary.main, color: themeObj.dark.palette.secondary.main}}>
-        {timeLeft[0]} days {timeLeft[1]} hours {timeLeft[2]} minutes remaining
-    </div>
+    <>
+        <div style={{
+            padding: "30vh",
+            background: themeObj.dark.palette.primary.main,
+            color: themeObj.dark.palette.secondary.main,
+            display: "grid",
+            // gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateRows: "repeat(2, 1fr)",
+            margin: 0,
+            // justifyContent: "space-evenly",
+            // position: "relative",
+            // display: "flex",
+            // justifyContent: "space-between",
+            // flexWrap: "wrap",
+            }}>
+            <div style={{fontSize: "3vw", display: "grid", height:"5vh", gridTemplateColumns: "repeat(3, 1fr)"}}>
+                <div>Days</div>
+                <div>Hours</div>
+                <div>Minutes</div>
+            </div>
+             <div style={{fontSize: "10vw", height:"2vh", display: "grid", gridTemplateColumns: "repeat(5,1fr)", justifyContent:"space-between"}}>
+                    <div>{timeLeft[0]}</div>
+                    <div>:</div>
+                    <div>{timeLeft[1]}</div>
+                    <div>:</div>
+                    <div>{timeLeft[2]}</div>
+            </div>
+        {/* {timeLeft[0]} days {timeLeft[1]} hours {timeLeft[2]} minutes remaining */}
+        </div>
+
+    </>
     );
 };
 

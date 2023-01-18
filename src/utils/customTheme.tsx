@@ -15,7 +15,8 @@ export const themeObj = {
         secondary: colors.secondarySecondary
       },
       accent: {
-        main: colors.accentMain
+        main: colors.accentMain,
+        secondary: colors.accentSecondary
       }
     }
   }
@@ -48,8 +49,8 @@ export const buttonObj = {
         },
         _active: {
           color: themeObj.dark.palette.primary.main,
-          bg: themeObj.dark.palette.secondary.main,
-          opacity: 0.85,
+          bg: themeObj.dark.palette.accent.main,
+          opacity: 0.80,
         }
       }
     }
@@ -72,7 +73,7 @@ const theme = extendTheme({
         footer: "'Raleway', sans-serif"
       },
       body: {
-        color: '#ffffff'
+        color: '#ff0000'
       }
     }
   }

@@ -2,6 +2,9 @@ import React from 'react';
 import './styles.scss';
 import { themeObj } from '../../utils/customTheme';
 import { useState, useEffect } from 'react';
+import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import { display } from '@mui/system';
 
 // I'll fix this when I have time later -- I know the logic and whatever if flawed and failing terribly rn.
 interface timeProps {
@@ -39,15 +42,23 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
         return () => clearInterval(interval);
     }, []); // only run the effect once
 
+    function getPercentage(current, maximum) {
+        const percentage = 100 - Math.round(100 * (current / maximum));
+        return percentage;
+    }
+
+    const hoursPercentage = getPercentage(timeLeft[1], 24);
+    const dayPercentage = getPercentage(timeLeft[0], 30.5);
+    const minutesPercentage = getPercentage(timeLeft[2], 60);
+ 
     return (
     <>
         <div style={{
-            padding: "30vh",
+            paddingTop: "20vh",
             background: themeObj.dark.palette.primary.main,
             color: themeObj.dark.palette.secondary.main,
-            display: "grid",
-            // gridTemplateColumns: "repeat(3, 1fr)",
-            gridTemplateRows: "repeat(2, 1fr)",
+            // display: "grid",
+            // gridTemplateRows: "repeat(2, 1fr)",
             margin: 0,
             // justifyContent: "space-evenly",
             // position: "relative",
@@ -55,17 +66,62 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
             // justifyContent: "space-between",
             // flexWrap: "wrap",
             }}>
-            <div style={{fontSize: "3vw", display: "grid", height:"5vh", gridTemplateColumns: "repeat(3, 1fr)"}}>
-                <div>Days</div>
-                <div>Hours</div>
-                <div>Minutes</div>
-            </div>
-             <div style={{fontSize: "10vw", height:"2vh", display: "grid", gridTemplateColumns: "repeat(5,1fr)", justifyContent:"space-between"}}>
-                    <div>{timeLeft[0]}</div>
-                    <div>:</div>
-                    <div>{timeLeft[1]}</div>
-                    <div>:</div>
-                    <div>{timeLeft[2]}</div>
+                <div style={{width: "100%", display: "flex", flexWrap: "wrap", justifyContent: "space-evenly", marginBottom: "10vh"}}>
+                    {/* display: "grid", gridTemplateColumns: "repeat(3, 1fr)" */}
+                <CircularProgressbarWithChildren value={dayPercentage}
+                    className="progressCircle"
+                    styles={buildStyles({
+                        // Rotation of path and trail, in number of turns (0-1)
+                        rotation: 0.50,
+                        // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                        strokeLinecap: 'butt',
+                        // Text size
+                        textSize: '16px',
+                        // Colors
+                        pathColor: themeObj.dark.palette.primary.main,
+                        textColor: themeObj.dark.palette.secondary.main,
+                        trailColor: themeObj.dark.palette.accent.main,
+                    })}>
+                        
+                         <div style={{fontSize:"128px"}}>{timeLeft[0]}</div>
+                         <div>Days</div>
+                    </CircularProgressbarWithChildren>
+                <CircularProgressbarWithChildren value={hoursPercentage}
+                    className="progressCircle"
+                    styles={buildStyles({
+                        // Rotation of path and trail, in number of turns (0-1)
+                        rotation: 0.50,
+                        // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                        strokeLinecap: 'butt',
+                        // Text size
+                        textSize: '16px',
+                        // Colors
+                        pathColor: themeObj.dark.palette.primary.main,
+                        textColor: themeObj.dark.palette.secondary.main,
+                        trailColor: themeObj.dark.palette.accent.main,
+                    })}>
+                        
+                         <div style={{fontSize:"128px"}}>{timeLeft[1]}</div>
+                         <div>Hours</div>
+                    </CircularProgressbarWithChildren>
+                <CircularProgressbarWithChildren value={minutesPercentage}
+                    className="progressCircle"
+                    styles={buildStyles({
+                        // Rotation of path and trail, in number of turns (0-1)
+                        rotation: 0.50,
+                        // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                        strokeLinecap: 'butt',
+                        // Text size
+                        textSize: '16px',
+                        // Colors
+                        pathColor: themeObj.dark.palette.primary.main,
+                        textColor: themeObj.dark.palette.secondary.main,
+                        trailColor: themeObj.dark.palette.accent.main,
+                    })}>
+                        
+                         <div style={{fontSize:"128px"}}>{timeLeft[2]}</div>
+                         <div>Minutes</div>
+                    </CircularProgressbarWithChildren>
             </div>
         {/* {timeLeft[0]} days {timeLeft[1]} hours {timeLeft[2]} minutes remaining */}
         </div>

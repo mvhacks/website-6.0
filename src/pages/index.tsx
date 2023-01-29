@@ -8,15 +8,10 @@ import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../utils/customTheme';
 import { themeObj } from '../utils/customTheme';
 import Countdown from '../components/countdown';
+import Timeline from '../components/timeline';
 // import {useState} from 'react';
 
 const IndexPage = () => {
-  //   const [isActive, setIsActive] = useState(false);
-
-  // const handleClick = () => {
-  //   // toggle
-  //   setIsActive(current => !current);
-  // };
   return (
     <ChakraProvider theme={theme}>
       <Layout>
@@ -24,17 +19,6 @@ const IndexPage = () => {
           title="Home"
           children={undefined}
         />
-        {/* <StaticImage
-          src="../images/MVHacksLogoMV.png"
-          loading="eager"
-          height={350}
-          quality={95}
-          alt="MV Hacks logo"
-          style={{ margin: 20 }}
-        /> */}
-        {/* style={{
-          background: themeObj.dark.palette.secondary.main,
-          color: themeObj.dark.palette.primary.main, */}
         <div className="center">
           <div
             id="backgroundText"
@@ -59,7 +43,8 @@ const IndexPage = () => {
           >
             <a href="#">Apply today!</a>
           </Button>
-          <Countdown year={2023} month={1} day={1} hour={9}></Countdown>
+          <Countdown year={2023} month={2} day={1} hour={9}></Countdown>
+          <Timeline></Timeline>
         </div>
       </Layout>
     </ChakraProvider>

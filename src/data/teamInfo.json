@@ -5,8 +5,6 @@
     "email": "sonav@mvhacks.io",
     "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
     "website": "https://sonavagarwal.com",
-    "insta": "virtuosonav",
-    "linkedInUrl": "",
     "isDirector": true,
     "team": "tech"
   },
@@ -16,8 +14,6 @@
     "email": "olivia@mvhacks.io",
     "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
     "website": "http://oliviaslai.com",
-    "insta": "olivialaii",
-    "linkedInUrl": "",
     "isDirector": true,
     "team": "event"
   },
@@ -38,8 +34,6 @@
     "email": "sonav@mvhacks.io",
     "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
     "website": "https://sonavagarwal.com",
-    "insta": "virtuosonav",
-    "linkedInUrl": "",
     "isDirector": true,
     "team": "lead"
   },
@@ -49,8 +43,6 @@
     "email": "olivia@mvhacks.io",
     "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
     "website": "http://oliviaslai.com",
-    "insta": "olivialaii",
-    "linkedInUrl": "",
     "isDirector": false,
     "team": "event"
   },
@@ -60,8 +52,6 @@
     "email": "ashwint@mvhacks.io",
     "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
     "website": "https://ashwin-t.github.io/Old-Website/",
-    "insta": "_Ashwin.t",
-    "linkedInUrl": "",
     "isDirector": false,
     "team": "tech"
   }

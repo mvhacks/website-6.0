@@ -13,6 +13,7 @@
 
 // potential new theme:
 $primaryMain: #171738;
+$primarySecondary: #26577a;
 $secondaryMain: #f1dfba;
 $secondaryAccent: #f2e5cb;
 //  #F0DCCA;
@@ -25,6 +26,7 @@ $accentSecondary: #00916f;
 
 :export {
 	primaryMain: $primaryMain;
+	primarySecondary: $primarySecondary;
 	secondaryMain: $secondaryMain;
 	secondarySecondary: $secondarySecondary;
 	accentMain: $accentMain;

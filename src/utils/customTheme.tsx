@@ -8,7 +8,8 @@ export const themeObj = {
   dark: {
     palette: {
       primary: {
-        main: colors.primaryMain
+        main: colors.primaryMain,
+        secondary: colors.primarySecondary
       },
       secondary: {
         main: colors.secondaryMain,

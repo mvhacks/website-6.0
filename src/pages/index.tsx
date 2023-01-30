@@ -9,6 +9,8 @@ import theme from '../utils/customTheme';
 import { themeObj } from '../utils/customTheme';
 import Countdown from '../components/countdown';
 import Timeline from '../components/timeline';
+import eventInfo from '../data/schedule.json';
+
 // import {useState} from 'react';
 
 const IndexPage = () => {
@@ -44,7 +46,7 @@ const IndexPage = () => {
             <a href="#">Apply today!</a>
           </Button>
           <Countdown year={2023} month={2} day={1} hour={9}></Countdown>
-          <Timeline></Timeline>
+          <Timeline eventInfo={eventInfo}></Timeline>
         </div>
       </Layout>
     </ChakraProvider>

@@ -1,8 +1,7 @@
 import { extendTheme } from '@chakra-ui/react';
 
+// @ts-ignore
 import * as colors from './_colors.module.scss';
-
-console.log(colors);
 
 export const themeObj = {
   dark: {
@@ -46,12 +45,12 @@ export const buttonObj = {
         color: themeObj.dark.palette.accent.main,
         _hover: {
           color: themeObj.dark.palette.primary.main,
-          bg: themeObj.dark.palette.accent.main,
+          bg: themeObj.dark.palette.accent.main
         },
         _active: {
           color: themeObj.dark.palette.primary.main,
           bg: themeObj.dark.palette.accent.main,
-          opacity: 0.80,
+          opacity: 0.8
         }
       }
     }
@@ -72,9 +71,6 @@ const theme = extendTheme({
         body: "'Raleway', sans-serif",
         head: "'Raleway', sans-serif",
         footer: "'Raleway', sans-serif"
-      },
-      body: {
-        color: '#ff0000'
       }
     }
   }

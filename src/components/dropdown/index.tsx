@@ -23,7 +23,7 @@ const Dropdown = ({ title, content }: DropdownProps) => {
         style={{
           zIndex: 10,
           color: themeObj.dark.palette.primary.main,
-          background: themeObj.dark.palette.secondary.main,
+          background: themeObj.dark.palette.secondary.secondary,
           padding: '5vh',
           fontWeight: 400,
           fontSize: '20px'
@@ -34,7 +34,7 @@ const Dropdown = ({ title, content }: DropdownProps) => {
       <Collapse
         in={open}
         style={{
-          background: themeObj.dark.palette.secondary.main,
+          background: themeObj.dark.palette.secondary.secondary,
           color: themeObj.dark.palette.primary.main,
           borderRadius: '4px',
           transform: 'translateY(-8px)'

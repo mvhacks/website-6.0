@@ -47,8 +47,8 @@ const IndexPage = () => {
             <a href="#">Apply today!</a>
           </Button>
           <Countdown year={2023} month={2} day={1} hour={9}></Countdown>
-          <PrizeMoney></PrizeMoney>
           <Timeline eventInfo={eventInfo}></Timeline>
+          <PrizeMoney></PrizeMoney>
         </div>
       </Layout>
     </ChakraProvider>

@@ -80,7 +80,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
             display: 'flex',
             flexWrap: 'wrap',
             marginBottom: '10vh',
-            gap: '2.5rem'
+            gap: '6.5rem'
           }}
         >
           {/* display: "grid", gridTemplateColumns: "repeat(3, 1fr)" */}

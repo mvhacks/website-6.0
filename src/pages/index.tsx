@@ -32,7 +32,7 @@ const IndexPage = () => {
               id="foregroundText"
               style={{ color: themeObj.dark.palette.secondary.main }}
             >
-              MV Hacks 5.0
+              MV Hacks 6.0
             </div>
             <div
               id="subtitle"

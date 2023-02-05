@@ -90,14 +90,14 @@ const TeamCards = ({ people, team }: Props) => {
                   <div className="img-wrapper">
                     <img
                       src={person.imgSrc === "" ? "/images/profiles/anonymousIcon.jpeg" : person.imgSrc}
-                      style={{ aspectRatio: '1/1', height: '200px' }}
+                      style={{  objectFit: "cover", width: "200px", height: "200px"}}
                       alt="profile"
                       className="image"
                     />
                     <div className="middle">{person.title}</div>
                   </div>
                   <h2 className="name-text">{person.name}</h2>
-                  <div style={{ display: 'flex', justifyContent: 'space-evenly'}}>
+                  <div style={{ display: 'flex', justifyContent: 'space-evenly', paddingBottom: "1vh"}}>
                     <a href={person.website} target="_blank">
                       <img src={"/icons/websiteIcon.png"} alt="website icon" style={{height:"30px"}}/>
                     </a>

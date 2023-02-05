@@ -1,58 +1,83 @@
 [
   {
-    "name": "Sonav Agarwal",
-    "title": "Tech Director",
-    "email": "sonav@mvhacks.io",
-    "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
-    "website": "https://sonavagarwal.com",
+    "name": "Jayant Patil",
+    "title": "Lead Director",
+    "email": "jay@mvhacks.io",
+    "imgSrc": "",
+    "website": "https://jayp570.github.io/",
     "isDirector": true,
-    "team": "tech"
+    "team": ""
   },
   {
-    "name": "Olivia Lai",
-    "title": "Event Director",
-    "email": "olivia@mvhacks.io",
-    "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
-    "website": "http://oliviaslai.com",
-    "isDirector": true,
-    "team": "event"
-  },
-  {
-    "name": "Ashwin Talwalkar",
+    "name": "Mihir Srivastava",
     "title": "Outreach Director",
-    "email": "ashwint@mvhacks.io",
-    "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
-    "website": "https://ashwin-t.github.io/Old-Website/",
-    "insta": "_Ashwin.t",
-    "linkedInUrl": "",
+    "email": "mihir@mvhacks.io",
+    "imgSrc": "/images/profiles/MihirSrivastava.jpg",
+    "website": "",
     "isDirector": true,
     "team": "outreach"
   },
   {
-    "name": "Another person",
-    "title": "Lead Director",
-    "email": "sonav@mvhacks.io",
-    "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
-    "website": "https://sonavagarwal.com",
+    "name": "Amanda Zhang",
+    "title": "Event Director",
+    "email": "amanda@mvhacks.io",
+    "imgSrc": "/images/profiles/AmandaZhang.jpg",
+    "website": "https://github.com/amndazhang",
     "isDirector": true,
-    "team": "lead"
+    "team": "event"
   },
   {
-    "name": "Anotherx2 Person",
-    "title": "Event Team",
-    "email": "olivia@mvhacks.io",
-    "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
-    "website": "http://oliviaslai.com",
+    "name": "Luise Haller",
+    "title": "Event Team Member",
+    "email": "luise@mvhacks.io",
+    "imgSrc": "/images/profiles/LuiseHaller.jpeg",
+    "website": "",
     "isDirector": false,
     "team": "event"
   },
   {
-    "name": "Anotherx3 Person",
-    "title": "Developer",
-    "email": "ashwint@mvhacks.io",
-    "imgSrc": "https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Z3Jhc3N8ZW58MHx8MHx8&w=1000&q=80",
-    "website": "https://ashwin-t.github.io/Old-Website/",
+    "name": "Alex Markova",
+    "title": "Tech Team Member",
+    "email": "alexm@mvhacks.io",
+    "imgSrc": "/images/profiles/AlexMarkova.jpg",
+    "website": "https://github.com/kitkatmia",
     "isDirector": false,
+    "team": "tech"
+  },
+  {
+    "name": "Emma Zhang",
+    "title": "Event Team Member",
+    "email": "emma@mvhacks.io",
+    "imgSrc": "",
+    "website": "",
+    "isDirector": false,
+    "team": "event"
+  },
+  {
+    "name": "Filip Kujawa",
+    "title": "Outreach Team Member",
+    "email": "filip@mvhacks.io",
+    "imgSrc": "/images/profiles/FilipKujawa.jpeg",
+    "website": "https://github.com/filipkujawa",
+    "isDirector": false,
+    "team": "outreach"
+  },
+  {
+    "name": "Atulya Weise",
+    "title": "Tech Team Member",
+    "email": "atulya@mvhacks.io",
+    "imgSrc": "/images/profiles/AtulyaWeise.png",
+    "website": "https://github.com/atultw",
+    "isDirector": false,
+    "team": "tech"
+  },
+  {
+    "name": "Jackson Otto",
+    "title": "Tech Director",
+    "email": "jackson@mvhacks.io",
+    "imgSrc": "/images/profiles/JacksonOtto - Jackson Otto.jpg",
+    "website": "https://github.com/JacksonO123",
+    "isDirector": true,
     "team": "tech"
   }
 ]

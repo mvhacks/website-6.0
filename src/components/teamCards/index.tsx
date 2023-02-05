@@ -18,8 +18,6 @@ interface Person {
   email: string;
   imgSrc: string;
   website: string;
-  insta: string;
-  linkedInUrl: string;
   isDirector: boolean;
   team: string;
 }
@@ -91,7 +89,7 @@ const TeamCards = ({ people, team }: Props) => {
                 >
                   <div className="img-wrapper">
                     <img
-                      src={person.imgSrc}
+                      src={person.imgSrc === "" ? "/images/profiles/anonymousIcon.jpeg" : person.imgSrc}
                       style={{ aspectRatio: '1/1', height: '200px' }}
                       alt="profile"
                       className="image"

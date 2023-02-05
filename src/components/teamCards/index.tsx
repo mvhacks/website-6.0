@@ -97,6 +97,14 @@ const TeamCards = ({ people, team }: Props) => {
                     <div className="middle">{person.title}</div>
                   </div>
                   <h2 className="name-text">{person.name}</h2>
+                  <div style={{ display: 'flex', justifyContent: 'space-evenly'}}>
+                    <a href={person.website} target="_blank">
+                      <img src={"/icons/websiteIcon.png"} alt="website icon" style={{height:"30px"}}/>
+                    </a>
+                    <a href={"mailto:" + person.email} target="_blank">
+                      <img src={"/icons/emailIcon.png"} alt="website icon" style={{height:"30px"}}/>
+                    </a>
+                  </div>
                 </div>
               ))
             ) : (

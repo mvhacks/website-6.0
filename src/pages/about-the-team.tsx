@@ -27,11 +27,7 @@ const AboutTheTeam = () => (
         <br />
       </h1>
     </div>
-    <Accordion
-      allowToggle
-      allowMultiple
-      className="team-accordion"
-    >
+    <div className='panels'>
       <TeamCards
         people={leadTeam}
         team="Team Leads"
@@ -48,7 +44,7 @@ const AboutTheTeam = () => (
         people={outreachTeam}
         team="Outreach Team"
       />
-    </Accordion>
+    </div>
   </Layout>
 );
 

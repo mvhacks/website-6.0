@@ -18,6 +18,15 @@
     "team": "outreach"
   },
   {
+    "name": "Jackson Otto",
+    "title": "Tech Director",
+    "email": "jackson@mvhacks.io",
+    "imgSrc": "/images/profiles/JacksonOtto - Jackson Otto.jpg",
+    "website": "https://github.com/JacksonO123",
+    "isDirector": true,
+    "team": "tech"
+  },
+  {
     "name": "Amanda Zhang",
     "title": "Event Director",
     "email": "amanda@mvhacks.io",
@@ -69,15 +78,6 @@
     "imgSrc": "/images/profiles/AtulyaWeise.png",
     "website": "https://github.com/atultw",
     "isDirector": false,
-    "team": "tech"
-  },
-  {
-    "name": "Jackson Otto",
-    "title": "Tech Director",
-    "email": "jackson@mvhacks.io",
-    "imgSrc": "/images/profiles/JacksonOtto - Jackson Otto.jpg",
-    "website": "https://github.com/JacksonO123",
-    "isDirector": true,
     "team": "tech"
   }
 ]

@@ -1,16 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
 import { themeObj } from '../../utils/customTheme';
 import './styles.scss';
-
-import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box
-} from '@chakra-ui/react';
 
 interface Person {
   name: string;
@@ -28,93 +18,52 @@ interface Props {
 }
 
 const TeamCards = ({ people, team }: Props) => {
-  const [open, setOpen] = useState(false);
-  const marginAmount = 50;
 
   return (
     <>
-      <AccordionItem
-        borderStyle="none"
-        className="accordion-item"
-      >
-        <h2 style={{ color: themeObj.dark.palette.secondary.main }}>
-          <AccordionButton
-            onClick={() => setOpen((prev) => !prev)}
-            className="team-card-button"
-            style={{
-              border: `2px solid ${themeObj.dark.palette.secondary.main}`,
-              transition: '0.15s',
-              marginBottom: `${open ? marginAmount : 0}px`
-            }}
-            _disabled={{
-              background: themeObj.dark.palette.secondary.main,
-              color: themeObj.dark.palette.primary.main
-            }}
-            _expanded={{
-              bg: themeObj.dark.palette.secondary.main,
-              color: themeObj.dark.palette.primary.main,
-              outlineColor: themeObj.dark.palette.primary.main
-            }}
-          >
-            <Box
+      <h1 style={{color:themeObj.dark.palette.secondary.main, fontSize: "40px", display: "flex", alignSelf: "flex-start", justifyContent: "flex-start", paddingRight:"7vh", paddingTop:"4vh", paddingLeft:"2vh"}}>{team}</h1>
+      <div className="inner">
+        {people ? (
+          people.map((person, index) => (
+            <div
+              key={`person-${index}`}
+              className="box"
               style={{
-                textAlign: 'left',
-                fontSize: '3vw',
-                fontWeight: '300',
-                marginRight: '5vh',
-                outlineColor: themeObj.dark.palette.secondary.main
+                backgroundColor: themeObj.dark.palette.secondary.main,
+                color: themeObj.dark.palette.primary.main,
+                outlineColor: person.isDirector
+                  ? themeObj.dark.palette.secondary.main
+                  : themeObj.dark.palette.primary.main,
+                borderRadius: '4px',
+                overflow: 'hidden'
               }}
             >
-              {team}
-            </Box>
-            <AccordionIcon style={{ scale: '150%' }}></AccordionIcon>
-          </AccordionButton>
-        </h2>
-        <AccordionPanel>
-          <div className="inner">
-            {people ? (
-              people.map((person, index) => (
-                <div
-                  key={`person-${index}`}
-                  className="box"
-                  style={{
-                    backgroundColor: themeObj.dark.palette.secondary.main,
-                    color: themeObj.dark.palette.primary.main,
-                    outlineColor: person.isDirector
-                      ? themeObj.dark.palette.secondary.main
-                      : themeObj.dark.palette.primary.main,
-                    borderRadius: '4px',
-                    overflow: 'hidden'
-                  }}
-                >
-                  <div className="img-wrapper">
-                    <img
-                      src={person.imgSrc === "" ? "/images/profiles/anonymousIcon.jpeg" : person.imgSrc}
-                      style={{  objectFit: "cover", width: "200px", height: "200px"}}
-                      alt="profile"
-                      className="image"
-                    />
-                    <div className="middle">{person.title}</div>
-                  </div>
-                  <h2 className="name-text">{person.name}</h2>
-                  <div style={{ display: 'flex', justifyContent: 'space-evenly', paddingBottom: "1vh" }}>
-                    {person.website !== "" ? (
-                      <a href={person.website} target="_blank">
-                        <img src={"/icons/websiteIcon.png"} alt="website icon" style={{height:"30px"}}/>
-                      </a>
-                    ) : null}
-                    <a href={"mailto:" + person.email} target="_blank">
-                      <img src={"/icons/emailIcon.png"} alt="website icon" style={{height:"30px"}}/>
-                    </a>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <span>No Images</span>
-            )}
-          </div>
-        </AccordionPanel>
-      </AccordionItem>
+              <div className="img-wrapper">
+                <img
+                  src={person.imgSrc === "" ? "/images/profiles/anonymousIcon.jpeg" : person.imgSrc}
+                  style={{  objectFit: "cover", width: "200px", height: "200px"}}
+                  alt="profile"
+                  className="image"
+                />
+                <div className="middle">{person.title}</div>
+              </div>
+              <h2 className="name-text">{person.name}</h2>
+              <div style={{ display: 'flex', justifyContent: 'space-evenly', paddingBottom: "1vh" }}>
+                {person.website !== "" ? (
+                  <a href={person.website} target="_blank">
+                    <img src={"/icons/websiteIcon.png"} alt="website icon" style={{height:"30px"}}/>
+                  </a>
+                ) : null}
+                <a href={"mailto:" + person.email} target="_blank">
+                  <img src={"/icons/emailIcon.png"} alt="website icon" style={{height:"30px"}}/>
+                </a>
+              </div>
+            </div>
+          ))
+        ) : (
+          <span>No Images</span>
+        )}
+      </div>
     </>
   );
 };

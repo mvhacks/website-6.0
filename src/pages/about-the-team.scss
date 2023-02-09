@@ -1,13 +1,12 @@
-.team-accordion {
+.panels {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-  border-style: none;
+	border-style: none;
 	display: flex;
 	flex-direction: column;
 	$gap: 32px;
-	padding-left: $gap;
 	padding-right: $gap;
 	gap: $gap;
-	align-items: center;
+	padding-bottom: 10vh;
 }

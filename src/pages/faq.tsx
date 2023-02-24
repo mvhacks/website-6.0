@@ -76,7 +76,7 @@ const Faq = () => (
 
 export const Head = () => (
   <Seo
-    title="Page two"
+    title="FAQ"
     children={undefined}
   />
 );

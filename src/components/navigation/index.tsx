@@ -37,6 +37,9 @@ const Navigation = () => {
         <div className="link">
           <Link to="/about-the-team">Team</Link>
         </div>
+        <div className="link">
+          <Link to="/sponsors">Sponsors</Link>
+        </div>
       </div>
     </nav>
   );

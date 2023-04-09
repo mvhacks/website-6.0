@@ -7,6 +7,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../utils/customTheme';
 import { themeObj } from '../utils/customTheme';
 import sponsorInfo from '../images/sponsorInfo.png';
+import Banner from "../components/banner";
 
 const SponsorsPage = () => {
   return (
@@ -26,19 +27,25 @@ const SponsorsPage = () => {
             <div style={{display:"flex", justifyContent:"center", alignItems: "center", margin:"10vh"}}>
                 <img src={sponsorInfo} alt="Sponsor Info" style={{maxWidth:"90%"}}/>
             </div>
-
-            <a href="https://drive.google.com/file/d/1FyM05z4O_me3PSV0WxpTatO3uiGxedWk/view?usp=sharing" target="_blank" style={{color:themeObj.dark.palette.accent.main, display:"flex", justifyContent:"center", alignItems: "center", padding:"5vh"}}>Click to see prospectus</a>  
+          <Button
+            variant="outline"
+            style={{display:"block", marginBottom:"5vh", marginLeft:"auto", marginRight:"auto"}}
+          >
+            <a href="https://drive.google.com/file/d/1FyM05z4O_me3PSV0WxpTatO3uiGxedWk/view?usp=sharing" target='_blank'>Prospectus</a>
+          </Button>
+          <Button
+            variant="outline"
+            style={{display:"block", marginBottom:"20vh", marginLeft:"auto", marginRight:"auto"}}
+          >
+            <a href="mailto:mihir@mvhacks.io?subject=Sponsoring%20MVHacks%206.0">Sponsor us!</a>
+          </Button>
         </div>
+        <Banner></Banner>
       </Layout>
     </ChakraProvider>
   );
 };
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => (
   <Seo
     title="Sponsors"

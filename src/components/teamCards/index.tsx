@@ -21,7 +21,7 @@ const TeamCards = ({ people, team }: Props) => {
 
   return (
     <>
-      <h1 style={{color:themeObj.dark.palette.secondary.main, fontSize: "40px", display: "flex", alignSelf: "flex-start", justifyContent: "flex-start", paddingRight:"7vh", paddingTop:"4vh", paddingLeft:"2vh"}}>{team}</h1>
+      <h1 className='teamTitle' style={{color:themeObj.dark.palette.secondary.main, display: "flex"}}>{team}</h1>
       <div className="inner">
         {people ? (
           people.map((person, index) => (

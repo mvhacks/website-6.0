@@ -9,8 +9,6 @@ import Seo from '../components/seo';
 import { themeObj } from '../utils/customTheme';
 import TeamCards from '../components/teamCards';
 
-import { Accordion } from '@chakra-ui/react';
-
 const leadTeam = people.filter((a) => a.isDirector == true);
 const techTeam = people.filter((a) => a.team == 'tech');
 const eventTeam = people.filter((a) => a.team == 'event');
@@ -21,7 +19,7 @@ const AboutTheTeam = () => (
     <div>
       <h1
         className="titleStyle"
-        style={{ color: themeObj.dark.palette.secondary.main, marginBottom: '4vh', fontSize: '5vw' }}
+        style={{ color: themeObj.dark.palette.secondary.main, marginBottom: '4vh'}}
       >
         About the team!
         <br />

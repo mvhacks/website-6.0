@@ -46,3 +46,26 @@ nav {
 		}
 	}
 }
+
+// display: none
+#title {
+	font-size: 17px;
+}
+
+.links {
+	font-size: 17px;
+}
+
+@media screen and (max-width: 500px) {
+	#title {
+		font-size: 20px;
+	}
+
+	.links {
+		font-size: 18px;
+	}
+
+	#homeLink {
+		display: none;
+	}
+}

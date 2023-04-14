@@ -25,8 +25,7 @@ const Dropdown = ({ title, content }: DropdownProps) => {
           color: themeObj.dark.palette.primary.main,
           background: themeObj.dark.palette.secondary.secondary,
           padding: '5vh',
-          fontWeight: 400,
-          fontSize: '20px'
+          fontWeight: 400
         }}
       >
         {title}
@@ -41,11 +40,7 @@ const Dropdown = ({ title, content }: DropdownProps) => {
         }}
       >
         <div
-          style={{
-            padding: '12px',
-            paddingTop: '16px',
-            paddingBottom: '10px'
-          }}
+          className='contentBox'
         >
           {content}
         </div>

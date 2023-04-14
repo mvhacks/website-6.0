@@ -9,7 +9,7 @@
 .banner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10vw;
+    gap: 3vw;
     padding: 3vw;
 }
 
@@ -25,6 +25,7 @@
     font-size: 64px;
     padding-top: 3vh;
 }
+
 @media screen and (max-width: 500px) {
     .banner {
         grid-template-columns: repeat(2, 1fr);
@@ -33,8 +34,4 @@
         padding-top: 1vh;
         font-size: 32px;
     }
-    // .banner img {
-    //     max-width: 200px;
-    //     min-width: 100px;
-    // }
 }

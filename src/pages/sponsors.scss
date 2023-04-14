@@ -1,6 +1,41 @@
 .titleStyle {
     margin-top: 5vh;
     text-align: center;
-    font-size: 64px;
+    font-size: 72px;
     font-weight: 200;
+}
+
+.sponsorsChart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh;
+    max-width: 90%; 
+}
+
+.sponsorsImg {
+    max-width: 90%; 
+    margin: auto;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+.contactButton {
+    margin-bottom: 20vh;
+}
+
+@media screen and (max-width: 500px) {
+    .titleStyle {
+        font-size: 56px;
+    }
+    .sponsorsChart {
+        margin: 1vw;
+    }
+    .sponsorsImg {
+        max-width: 96%;
+        margin-bottom: 3vh;
+    }
+    .contactButton {
+        margin-bottom: 5vh;
+    }
 }

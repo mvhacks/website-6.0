@@ -18,7 +18,7 @@ const Navigation = () => {
       /> */}
       <Link
         id="title"
-        style={{ color: themeObj.dark.palette.accent.main, fontSize: '17px' }}
+        style={{ color: themeObj.dark.palette.accent.main}}
         to="/"
       >
         MV Hacks
@@ -26,9 +26,8 @@ const Navigation = () => {
 
       <div
         className="links"
-        style={{ fontSize: '17px' }}
       >
-        <div className="link">
+        <div className="link" id='homeLink'>
           <Link to="/">Home</Link>
         </div>
         <div className="link">

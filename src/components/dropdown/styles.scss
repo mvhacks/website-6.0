@@ -2,5 +2,21 @@
 	.dropdown-header {
 		width: 100%;
 		padding: 8px 10px;
+		font-size: 20px;
 	}
+}
+
+.contentBox {
+	padding: 12px;
+	padding-top: 16px;
+	padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+	.contentBox {
+		padding: 8px;
+		padding-top: 12px;
+		padding-bottom: 6px;
+	}
+
 }

@@ -10,3 +10,15 @@
 	gap: $gap;
 	padding-bottom: 10vh;
 }
+
+.titleStyle {
+	font-size: 72;
+}
+
+@media screen and (max-width: 500px) {
+    .titleStyle {
+        font-size: 56px;
+    }
+}
+
+// 72, 64

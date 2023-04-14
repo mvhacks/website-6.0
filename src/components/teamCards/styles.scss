@@ -1,13 +1,22 @@
 @import "../../utils/_colors.module.scss";
 
+.teamTitle {
+  font-size: 40px;
+  align-self: flex-start;
+  justify-content: flex-start;
+  padding-right: 7vh; 
+  padding-top: 4vh;
+  padding-left: 2vh;
+}
+
 .inner {
-    display: flex;
-    width: 100%;
-    justify-content: left;
-    padding-left: 2vh;
-    text-align: center;
-    flex-wrap: wrap;
-    gap: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  padding-left: 2vh;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .image {
@@ -69,4 +78,18 @@
   font-weight: 400;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .teamTitle {
+        font-size: 36px;
+        align-self: center;
+        justify-content: center;
+        padding: 0;
+        padding-top: 4vh;
+    }
+    .inner {
+      justify-content: center;
+      padding-left: 0;
+    }
 }

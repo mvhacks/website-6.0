@@ -10,7 +10,7 @@ body {
 .titleStyle {
     margin-top: 5vh;
     text-align: center;
-    font-size: 64px;
+    font-size: 72px;
     font-weight: 200;
 }
 
@@ -27,17 +27,15 @@ body {
     }
 }
 
-// .boxStyling {
-//     display: flex;
-//     width: 65vh;
-//     height: 7vh;
-//     align-items: center;
-//     justify-content: left;
-// }
-
-// .buttonStyling {
-//     border: none;
-//     border-radius: 5px;
-//     font-size: 24px;
-//     font-weight: 500;
-// }
+@media screen and (max-width: 500px) {
+    .faq {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        article {
+            width: 90%;
+        }
+    }
+    .titleStyle {
+        font-size: 56px;
+    }
+}

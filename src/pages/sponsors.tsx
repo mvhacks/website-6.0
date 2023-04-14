@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
-import './index.scss';
+import './sponsors.scss';
 import { Button } from '@chakra-ui/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import theme from '../utils/customTheme';
@@ -20,12 +20,12 @@ const SponsorsPage = () => {
         <div>
             <h1
                 className="titleStyle"
-                style={{ color: themeObj.dark.palette.secondary.main, fontSize: "5vw" }}
+                style={{ color: themeObj.dark.palette.secondary.main}}
             >
                 Sponsor us!
             </h1>
-            <div style={{display:"flex", justifyContent:"center", alignItems: "center", margin:"10vh"}}>
-                <img src={sponsorInfo} alt="Sponsor Info" style={{maxWidth:"90%"}}/>
+            <div className='sponsorChart'>
+                <img className='sponsorsImg' src={sponsorInfo} alt="Sponsor Info"/>
             </div>
           <Button
             variant="outline"
@@ -34,8 +34,9 @@ const SponsorsPage = () => {
             <a href="https://drive.google.com/file/d/1FyM05z4O_me3PSV0WxpTatO3uiGxedWk/view?usp=sharing" target='_blank'>Prospectus</a>
           </Button>
           <Button
+            className='contactButton'
             variant="outline"
-            style={{display:"block", marginBottom:"20vh", marginLeft:"auto", marginRight:"auto"}}
+            style={{display:"block", marginLeft:"auto", marginRight:"auto"}}
           >
             <a href="mailto:mihir@mvhacks.io?subject=Sponsoring%20MVHacks%206.0">Sponsor us!</a>
           </Button>

@@ -1,3 +1,21 @@
-.progressCircle {
-    // padding-left: 15vh;
+.progressBars {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10vh;
+    gap: 10vw;
+}
+
+.circleBigText {
+    font-size: 9vw;
+}
+
+@media screen and (max-width: 500px) {
+  .progressBars {
+    gap: 15vw;
+    width: 50vw;
+    display: grid;
+  }
+  .circleBigText {
+    font-size: 20vw;
+  }
 }

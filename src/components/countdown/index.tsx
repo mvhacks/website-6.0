@@ -61,7 +61,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
     // Colors
     pathColor: themeObj.dark.palette.primary.main,
     textColor: themeObj.dark.palette.secondary.main,
-    trailColor: themeObj.dark.palette.accent.main
+    trailColor: themeObj.dark.palette.accent.main,
   });
 
   return (
@@ -75,13 +75,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
         }}
       >
         <div
-          style={{
-            width: '100%',
-            display: 'flex',
-            flexWrap: 'wrap',
-            marginBottom: '10vh',
-            gap: '6.5rem'
-          }}
+          className='progressBars'
         >
           {/* display: "grid", gridTemplateColumns: "repeat(3, 1fr)" */}
           <CircularProgressbarWithChildren
@@ -89,7 +83,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div style={{ fontSize: '128px' }}>{timeLeft[0]}</div>
+            <div className='circleBigText'>{timeLeft[0]}</div>
             <div>Days</div>
           </CircularProgressbarWithChildren>
           <CircularProgressbarWithChildren
@@ -97,7 +91,8 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div style={{ fontSize: '128px' }}>{timeLeft[1]}</div>
+            <div className='circleBigText'>{timeLeft[1]}</div>
+            {/* used to be 128px */}
             <div>Hours</div>
           </CircularProgressbarWithChildren>
           <CircularProgressbarWithChildren
@@ -105,7 +100,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div style={{ fontSize: '128px' }}>{timeLeft[2]}</div>
+            <div className='circleBigText'>{timeLeft[2]}</div>
             <div>Minutes</div>
           </CircularProgressbarWithChildren>
         </div>

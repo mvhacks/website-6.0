@@ -15,15 +15,6 @@
   align-items: center;
 } 
 
-/* .intro {
-  max-width: none;
-  line-height: var(--line-height-loose);
-} */
-
-/* added padding to mvhacks image, so it looks less crammed */
-/* .img {
-  padding-top: 4vh;
-} */
 
 #backgroundText {
   font-family: var(--font-family-head);
@@ -46,26 +37,23 @@
   width: 90%;
   transform: translate(-50%, -50%);
   line-height: 8rem;
-  // color: var(--color-text);
 }
 
 #subtitle {
   letter-spacing: normal;
   font-family: var(--font-family);
-  // color: var(--color-text);
   font-size: 25px;
   margin-bottom: 4rem;
 }
 
-// #applyButton {
-//   text-decoration: none; 
-//   background: var(--color-text);
-//   color: var(--color-primary);
-// }
-
-
-/* #applyButton:hover { text-decoration: none; }
-
-
-#applyButton:active { text-decoration: none; } */
-
+@media screen and (max-width: 500px) {
+  #backgroundText {
+    font-size: 84px;
+  }
+  #foregroundText {
+    font-size: 72px;
+  }
+  #subtitle {
+    font-size: 24px;
+  }
+}

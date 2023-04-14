@@ -33,21 +33,22 @@ const IndexPage = () => {
               id="foregroundText"
               style={{ color: themeObj.dark.palette.secondary.main }}
             >
-              MV Hacks 6.0
+              MVHacks 6.0
             </div>
-            <div
-              id="subtitle"
-              style={{ color: themeObj.dark.palette.secondary.main }}
-            >
-              The hackathon for everyone. Especially beginners.
-            </div>
+        </div>
+          <div
+            id="subtitle"
+            style={{ color: themeObj.dark.palette.secondary.main }}
+          >
+            The hackathon for everyone. Especially beginners.
           </div>
+          
           <Button
             variant="outline"
           >
             <a href="#">Apply today!</a>
           </Button>
-          <Countdown year={2023} month={5} day={1} hour={9}></Countdown>
+          <Countdown year={2023} month={6} day={1} hour={8}></Countdown>
           <PrizeMoney></PrizeMoney>
           <Timeline eventInfo={eventInfo}></Timeline>
           <Banner></Banner>

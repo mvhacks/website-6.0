@@ -3,11 +3,10 @@ import { themeObj } from '../../utils/customTheme';
 import './styles.scss';
 
 const Banner = () => {
-    console.log("Hii");
     return (
-        <div style={{ background: themeObj.dark.palette.accent.main, display: "flex", textAlign: "center", justifyContent: "center", width: "100%", height: "60vh", flexDirection: 'column', alignItems: "center" }}>
+        <div style={{ background: themeObj.dark.palette.accent.main, display: "flex", textAlign: "center", justifyContent: "center", width: "100%", height: "auto", flexDirection: 'column', alignItems: "center" }}>
             <div>
-                <h1 style={{color: themeObj.dark.palette.primary.main, fontSize: "48px", paddingBottom: "5vh"}}>
+                <h1 className='sponsorsText' style={{color: themeObj.dark.palette.primary.main}}>
                     Sponsors
                 </h1>
             </div>

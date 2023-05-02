@@ -16,11 +16,15 @@
 
 #backgroundText {
   font-family: var(--font-family-head);
-  font-size: 300px;
+  font-size: max(20vw, 220px);
+  height: 445px;
+  margin: auto;
   font-weight: 200;
   margin-top: 100px auto;
   text-align: center;
   letter-spacing: 15px;
+  display: flex;
+  align-items: center;
 }
 
 #foregroundText {
@@ -28,13 +32,13 @@
   padding: 0;
   margin: 0;
   text-align: center;
-  font-size: 175px;
+  font-size: max(18vw, 130px);
   position: absolute;
   top: 255px;
   left: 50%;
   width: 90%;
-  transform: translate(-50%, -50%);
-  line-height: 8rem;
+  transform: translate(-50%, -40%);
+  line-height: max(14vw, 7rem);
 }
 
 #subtitle {
@@ -42,14 +46,18 @@
   font-family: var(--font-family);
   font-size: 25px;
   margin-bottom: 4rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
   #backgroundText {
-    font-size: 84px;
+    font-size: 135px;
   }
   #foregroundText {
     font-size: 72px;
+    line-height: 4rem;
   }
   #subtitle {
     font-size: 24px;

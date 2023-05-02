@@ -26,7 +26,7 @@ const IndexPage = () => {
             id="backgroundText"
             style={{ color: themeObj.dark.palette.accent.secondary }}
           >
-            2023
+            <span>2023</span>
             <div
               id="foregroundText"
               style={{ color: themeObj.dark.palette.secondary.main }}

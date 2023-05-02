@@ -1,9 +1,11 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import './styles.scss';
 
-const Header = ({ siteTitle }) => (
+type HeaderPropTypes = {
+  siteTitle: string;
+};
+
+const Header = ({ siteTitle }: HeaderPropTypes) => (
   <header
     style={{
       margin: `0 auto`,
@@ -31,12 +33,10 @@ const Header = ({ siteTitle }) => (
   </header>
 );
 
-Header.propTypes = {
-  siteTitle: PropTypes.string
+const defaultProps = {
+  siteTitle: ''
 };
 
-Header.defaultProps = {
-  siteTitle: ``
-};
+Header.defaultProps = defaultProps;
 
 export default Header;

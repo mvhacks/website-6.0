@@ -12,16 +12,20 @@ interface Person {
   team: string;
 }
 
-interface Props {
+interface TeamCardsProps {
   people: Person[];
   team: String;
 }
 
-const TeamCards = ({ people, team }: Props) => {
-
+const TeamCards = ({ people, team }: TeamCardsProps) => {
   return (
     <>
-      <h1 className='teamTitle' style={{color:themeObj.dark.palette.secondary.main, display: "flex"}}>{team}</h1>
+      <h1
+        className="teamTitle"
+        style={{ color: themeObj.dark.palette.secondary.main, display: 'flex' }}
+      >
+        {team}
+      </h1>
       <div className="inner">
         {people ? (
           people.map((person, index) => (
@@ -40,22 +44,36 @@ const TeamCards = ({ people, team }: Props) => {
             >
               <div className="img-wrapper">
                 <img
-                  src={person.imgSrc === "" ? "/images/profiles/anonymousIcon.jpeg" : person.imgSrc}
-                  style={{  objectFit: "cover", width: "200px", height: "200px"}}
+                  src={person.imgSrc === '' ? '/images/profiles/anonymousIcon.jpeg' : person.imgSrc}
+                  style={{ objectFit: 'cover', width: '200px', height: '200px' }}
                   alt="profile"
                   className="image"
                 />
                 <div className="middle">{person.title}</div>
               </div>
               <h2 className="name-text">{person.name}</h2>
-              <div style={{ display: 'flex', justifyContent: 'space-evenly', paddingBottom: "1vh" }}>
-                {person.website !== "" ? (
-                  <a href={person.website} target="_blank">
-                    <img src={"/icons/websiteIcon.png"} alt="website icon" style={{height:"30px"}}/>
+              <div style={{ display: 'flex', justifyContent: 'space-evenly', paddingBottom: '1vh' }}>
+                {person.website !== '' ? (
+                  <a
+                    href={person.website}
+                    target="_blank"
+                  >
+                    <img
+                      src={'/icons/websiteIcon.png'}
+                      alt="website icon"
+                      style={{ height: '30px' }}
+                    />
                   </a>
                 ) : null}
-                <a href={"mailto:" + person.email} target="_blank">
-                  <img src={"/icons/emailIcon.png"} alt="website icon" style={{height:"30px"}}/>
+                <a
+                  href={'mailto:' + person.email}
+                  target="_blank"
+                >
+                  <img
+                    src={'/icons/emailIcon.png'}
+                    alt="website icon"
+                    style={{ height: '30px' }}
+                  />
                 </a>
               </div>
             </div>

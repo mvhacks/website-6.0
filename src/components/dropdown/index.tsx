@@ -11,8 +11,8 @@ interface DropdownProps {
 const Dropdown = ({ title, content }: DropdownProps) => {
   const [open, setOpen] = useState<boolean>(false);
 
-  const toggleOpen = (): void => {
-    setOpen((prev: boolean): boolean => !prev);
+  const toggleOpen = () => {
+    setOpen((prev) => !prev);
   };
 
   return (
@@ -39,11 +39,7 @@ const Dropdown = ({ title, content }: DropdownProps) => {
           transform: 'translateY(-8px)'
         }}
       >
-        <div
-          className='contentBox'
-        >
-          {content}
-        </div>
+        <div className="contentBox">{content}</div>
       </Collapse>
     </div>
   );

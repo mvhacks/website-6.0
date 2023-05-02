@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import './about-the-team.scss';
 
 import people from '../data/teamInfo.json';
@@ -19,13 +19,13 @@ const AboutTheTeam = () => (
     <div>
       <h1
         className="titleStyle"
-        style={{ color: themeObj.dark.palette.secondary.main, marginBottom: '4vh'}}
+        style={{ color: themeObj.dark.palette.secondary.main, marginBottom: '4vh' }}
       >
         About the team!
         <br />
       </h1>
     </div>
-    <div className='panels'>
+    <div className="panels">
       <TeamCards
         people={leadTeam}
         team="Team Leads"

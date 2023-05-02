@@ -4,7 +4,6 @@ import { themeObj } from '../../utils/customTheme';
 import { useState, useEffect } from 'react';
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import { display } from '@mui/system';
 
 // I'll fix this when I have time later -- I know the logic and whatever if flawed and failing terribly rn.
 interface timeProps {
@@ -42,7 +41,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
     return () => clearInterval(interval);
   }, []); // only run the effect once
 
-  function getPercentage(current, maximum) {
+  function getPercentage(current: number, maximum: number) {
     const percentage = 100 - Math.round(100 * (current / maximum));
     return percentage;
   }
@@ -61,7 +60,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
     // Colors
     pathColor: themeObj.dark.palette.primary.main,
     textColor: themeObj.dark.palette.secondary.main,
-    trailColor: themeObj.dark.palette.accent.main,
+    trailColor: themeObj.dark.palette.accent.main
   });
 
   return (
@@ -74,16 +73,14 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
           margin: 0
         }}
       >
-        <div
-          className='progressBars'
-        >
+        <div className="progressBars">
           {/* display: "grid", gridTemplateColumns: "repeat(3, 1fr)" */}
           <CircularProgressbarWithChildren
             value={dayPercentage}
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div className='circleBigText'>{timeLeft[0]}</div>
+            <div className="circleBigText">{timeLeft[0]}</div>
             <div>Days</div>
           </CircularProgressbarWithChildren>
           <CircularProgressbarWithChildren
@@ -91,7 +88,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div className='circleBigText'>{timeLeft[1]}</div>
+            <div className="circleBigText">{timeLeft[1]}</div>
             {/* used to be 128px */}
             <div>Hours</div>
           </CircularProgressbarWithChildren>
@@ -100,7 +97,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div className='circleBigText'>{timeLeft[2]}</div>
+            <div className="circleBigText">{timeLeft[2]}</div>
             <div>Minutes</div>
           </CircularProgressbarWithChildren>
         </div>

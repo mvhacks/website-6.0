@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import './faq.scss';
 
 import Layout from '../components/layout';

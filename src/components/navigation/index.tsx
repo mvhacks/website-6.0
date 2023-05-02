@@ -18,16 +18,17 @@ const Navigation = () => {
       /> */}
       <Link
         id="title"
-        style={{ color: themeObj.dark.palette.accent.main}}
+        style={{ color: themeObj.dark.palette.accent.main }}
         to="/"
       >
         MV Hacks
       </Link>
 
-      <div
-        className="links"
-      >
-        <div className="link" id='homeLink'>
+      <div className="links">
+        <div
+          className="link"
+          id="homeLink"
+        >
           <Link to="/">Home</Link>
         </div>
         <div className="link">

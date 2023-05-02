@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 
 import Layout from '../components/layout';
 import Seo from '../components/seo';
@@ -12,8 +12,6 @@ import Timeline from '../components/timeline';
 import PrizeMoney from '../components/prizeMoney';
 import eventInfo from '../data/schedule.json';
 import Banner from '../components/banner';
-
-// import {useState} from 'react';
 
 const IndexPage = () => {
   return (
@@ -35,20 +33,23 @@ const IndexPage = () => {
             >
               MVHacks 6.0
             </div>
-        </div>
+          </div>
           <div
             id="subtitle"
             style={{ color: themeObj.dark.palette.secondary.main }}
           >
             The hackathon for everyone. Especially beginners.
           </div>
-          
-          <Button
-            variant="outline"
-          >
+
+          <Button variant="outline">
             <a href="#">Apply today!</a>
           </Button>
-          <Countdown year={2023} month={6} day={1} hour={8}></Countdown>
+          <Countdown
+            year={2023}
+            month={6}
+            day={1}
+            hour={8}
+          ></Countdown>
           <PrizeMoney></PrizeMoney>
           <Timeline eventInfo={eventInfo}></Timeline>
           <Banner></Banner>

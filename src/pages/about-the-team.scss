@@ -1,24 +1,24 @@
 .panels {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	border-style: none;
-	display: flex;
-	flex-direction: column;
-	$gap: 32px;
-	padding-right: $gap;
-	gap: $gap;
-	padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  $gap: 32px;
+  padding-right: $gap;
+  gap: $gap;
+  padding-bottom: 10vh;
 }
 
 .titleStyle {
-	font-size: 72;
+  font-size: 72;
 }
 
 @media screen and (max-width: 500px) {
-    .titleStyle {
-        font-size: 56px;
-    }
+  .titleStyle {
+    font-size: 56px;
+  }
 }
 
 // 72, 64

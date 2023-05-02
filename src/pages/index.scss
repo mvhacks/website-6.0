@@ -7,20 +7,18 @@
   --border-radius: 4px;
 }
 
-
 .center {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-} 
-
+}
 
 #backgroundText {
   font-family: var(--font-family-head);
   font-size: 300px;
   font-weight: 200;
-  margin-top: 100px auto; 
+  margin-top: 100px auto;
   text-align: center;
   letter-spacing: 15px;
 }
@@ -31,7 +29,7 @@
   margin: 0;
   text-align: center;
   font-size: 175px;
-  position: absolute; 
+  position: absolute;
   top: 255px;
   left: 50%;
   width: 90%;

@@ -46,8 +46,8 @@ const IndexPage = () => {
           </Button>
           <Countdown
             year={2023}
-            month={6}
-            day={1}
+            month={5}
+            day={28}
             hour={8}
           ></Countdown>
           <PrizeMoney></PrizeMoney>

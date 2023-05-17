@@ -46,7 +46,7 @@ const questions: Question[] = [
     question: 'What are the rules?',
     answer: `Be nice, respectful, and have fun! Hackers are expected to behave appropriately and safely at all times, and abide by the MLH Code of Conduct.`
   },
-  { question: 'I have other questions!', answer: `Contact us by email at contact@mv-hacks.com.` }
+  { question: 'I have other questions!', answer: `Contact us by email at <u><a href="mailto:contact@mv-hacks.com">contact@mv-hacks.com</a></u>.` }
 ];
 
 const Faq = () => (
@@ -62,7 +62,7 @@ const Faq = () => (
         <article>
           <Dropdown
             title={question.question}
-            content={<span>{question.answer}</span>}
+            content={<span dangerouslySetInnerHTML={{ __html: question.answer }} />}
           />
         </article>
       ))}

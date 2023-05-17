@@ -41,17 +41,30 @@ const Layout = ({ children }: LayoutProps) => {
             style={{ width: '4vh', marginLeft: 'auto', marginRight: 'auto' }}
           />
         </a>
-        <Button
-          variant="outline"
-          style={{ marginTop: '15px' }}
-        >
-          <a
-            href="https://mvhacks-4-5.devpost.com/?"
-            target="_blank"
+        {/* <div style={{width: "100%"}}> */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', flexDirection: 'column' }}>
+          <Button
+            variant="outline"
+            style={{ marginTop: '15px' }}
           >
-            Check out our 4.5 winners!
-          </a>
-        </Button>
+            <a
+              href="mailto:contact@mv-hacks.com"
+            >
+              Contact us!
+            </a>
+          </Button>
+          <Button
+            variant="outline"
+            style={{ marginTop: '15px', justifyContent: "center"}}
+          >
+          <a
+              href="https://mvhacks-4-5.devpost.com/?"
+              target="_blank"
+            >
+              Check out our 4.5 winners!
+            </a>
+          </Button>
+        </div>
       </footer>
     </div>
   );

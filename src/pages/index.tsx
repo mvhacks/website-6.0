@@ -42,7 +42,7 @@ const IndexPage = () => {
           </div>
 
           <Button variant="outline">
-            <a href="#">Apply today!</a>
+            <a href="https://forms.gle/gFxg3xjugR1dNhAv7">Sign up now!</a>
           </Button>
           <Countdown
             year={2023}

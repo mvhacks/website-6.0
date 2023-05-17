@@ -25,10 +25,10 @@ const Banner = () => {
         </h1>
       </div>
       <div className="banner">
+        <img src="/images/sponsors/balsamic_logo.png"></img>
+        {/* <img src="/images/sponsors/genericComp.jpeg"></img>
         <img src="/images/sponsors/genericComp.jpeg"></img>
-        <img src="/images/sponsors/genericComp.jpeg"></img>
-        <img src="/images/sponsors/genericComp.jpeg"></img>
-        <img src="/images/sponsors/genericComp.jpeg"></img>
+        <img src="/images/sponsors/genericComp.jpeg"></img> */}
       </div>
     </div>
   );

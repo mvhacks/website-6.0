@@ -41,7 +41,6 @@ const Layout = ({ children }: LayoutProps) => {
             style={{ width: '4vh', marginLeft: 'auto', marginRight: 'auto' }}
           />
         </a>
-        {/* <div style={{width: "100%"}}> */}
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', flexDirection: 'column' }}>
           <Button
             variant="outline"

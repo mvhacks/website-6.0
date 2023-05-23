@@ -47,7 +47,7 @@ const IndexPage = () => {
           <Countdown
             year={2023}
             month={5}
-            day={28}
+            day={17}
             hour={8}
           ></Countdown>
           <PrizeMoney></PrizeMoney>

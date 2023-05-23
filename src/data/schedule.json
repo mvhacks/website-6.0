@@ -16,43 +16,42 @@
   },
   {
     "name": "Workshop #1",
-    "description": "n/a",
+    "description": "",
     "time": "11:00 am"
   },
   {
     "name": "Meal + Exercise Break",
-    "description": "n/a",
+    "description": "",
     "time": "12:30 pm"
   },
   {
     "name": "Workshop #2",
-    "description": "n/a",
+    "description": "",
     "time": "2:30 pm"
   },
   {
     "name": "Mini game: Light",
-    "description": "n/a",
+    "description": "",
     "time": "3:30 pm"
   },
   {
     "name": "Bob Ross MS Paint Party OR Scavenger Hunt",
-    "description": "n/a",
+    "description": "",
     "time": "4:30 pm"
   },
   {
     "name": "Workshop #3",
-    "description": "n/a",
+    "description": "",
     "time": "6:00 pm"
   },
   {
     "name": "End of hacking",
-    "description": "Everyone submits their projects",
+    "description": "Everyone submits their projects!",
     "time": "8:00 pm"
   },
   {
     "name": "Closing ceremony + awards",
-    "description": "n/a",
+    "description": "Judges will vote on best projects and present the winners their awards",
     "time": "9:00 pm"
   }
-
 ]

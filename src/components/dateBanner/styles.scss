@@ -1,0 +1,12 @@
+// font-size: 32px;
+
+.dateBanner {
+  font-size: 64px;
+  padding: 15vh;
+}
+
+@media screen and (max-width: 500px) {
+  .dateBanner {
+    font-size: 32px;
+  }
+}

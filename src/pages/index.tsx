@@ -12,6 +12,7 @@ import Timeline from '../components/timeline';
 import PrizeMoney from '../components/prizeMoney';
 import eventInfo from '../data/schedule.json';
 import Banner from '../components/banner';
+import DateBanner from '../components/dateBanner';
 
 const IndexPage = () => {
   return (
@@ -44,6 +45,7 @@ const IndexPage = () => {
           <Button variant="outline">
             <a href="https://forms.gle/gFxg3xjugR1dNhAv7" target='_blank'>Sign up now!</a>
           </Button>
+          <DateBanner></DateBanner>
           <Countdown
             year={2023}
             month={5}

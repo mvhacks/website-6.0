@@ -67,7 +67,7 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
     <>
       <div
         style={{
-          paddingTop: '20vh',
+          paddingTop: '10vh',
           background: themeObj.dark.palette.primary.main,
           color: themeObj.dark.palette.secondary.main,
           margin: 0

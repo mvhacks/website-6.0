@@ -3,7 +3,7 @@
     "name": "Jayant Patil",
     "title": "Lead Director",
     "email": "jay@mvhacks.io",
-    "imgSrc": "public/images/profiles/JayantPatil.jpeg",
+    "imgSrc": "/images/profiles/JayantPatil.jpeg",
     "website": "https://jayp570.github.io/",
     "isDirector": true,
     "team": ""

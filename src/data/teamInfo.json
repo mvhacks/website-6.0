@@ -88,5 +88,23 @@
     "website": "",
     "isDirector": false,
     "team": "tech"
+  },
+  {
+    "name": "Atli Arnarsson",
+    "title": "Outreach Team Member",
+    "email": "atli@mvhacks.io",
+    "imgSrc": "",
+    "website": "",
+    "isDirector": false,
+    "team": "outreach"
+  },
+  {
+    "name": "Sandra Ravishankar",
+    "title": "Outreach Team Member",
+    "email": "sandra@mvhacks.io",
+    "imgSrc": "",
+    "website": "",
+    "isDirector": false,
+    "team": "outreach"
   }
 ]

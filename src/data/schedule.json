@@ -1,13 +1,13 @@
 [
   {
     "name": "Check-in",
-    "description": "n/a",
-    "time": "7:45 am"
+    "description": "",
+    "time": "8:00 am"
   },
   {
     "name": "Opening Ceremony",
-    "description": "n/a",
-    "time": "8:00 am"
+    "description": "",
+    "time": "8:15 am"
   },
   {
     "name": "Icebreakers",
@@ -15,34 +15,24 @@
     "time": "8:30 am"
   },
   {
-    "name": "Workshop #1",
-    "description": "",
-    "time": "11:00 am"
+    "name": "Hack!",
+    "description": "Start hacking!",
+    "time": "9:00 am"
   },
   {
-    "name": "Meal + Exercise Break",
-    "description": "",
+    "name": "Workshop 1: Building with VueJS",
+    "description": "Hosted by Sander Vonk",
+    "time": "10:00 am"
+  },
+  {
+    "name": "Workshop 2: Intro to iOS",
+    "description": "Hosted by Atulya Weise",
     "time": "12:30 pm"
   },
   {
-    "name": "Workshop #2",
-    "description": "",
-    "time": "2:30 pm"
-  },
-  {
-    "name": "Mini game: Light",
-    "description": "",
-    "time": "3:30 pm"
-  },
-  {
-    "name": "Bob Ross MS Paint Party OR Scavenger Hunt",
-    "description": "",
-    "time": "4:30 pm"
-  },
-  {
-    "name": "Workshop #3",
-    "description": "",
-    "time": "6:00 pm"
+    "name": "Game - CTF",
+    "description": "Capture the flag games",
+    "time": "1:00 pm"
   },
   {
     "name": "End of hacking",
@@ -50,8 +40,18 @@
     "time": "8:00 pm"
   },
   {
-    "name": "Closing ceremony + awards",
-    "description": "Judges will vote on best projects and present the winners their awards",
+    "name": "skribbl.io",
+    "description": "~Game time~",
+    "time": "4:00 pm"
+  },
+  {
+    "name": "Turn in submissions!",
+    "description": "Voting and judging starts",
+    "time": "8:00 pm"
+  },
+  {
+    "name": "Closing cerenomy",
+    "description": "Announcing winners!",
     "time": "9:00 pm"
   }
 ]

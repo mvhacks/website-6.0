@@ -9,6 +9,8 @@ interface EventInfo {
   name: string;
   description: string;
   time: string;
+  descriptionLinked?: boolean;
+  descriptionLink?: string;
 }
 
 interface TimelineProps {
@@ -50,12 +52,25 @@ const Timeline = ({ eventInfo }: TimelineProps) => {
               >
                 {event.name}
               </h1>
-              <h2
-                className="vertical-timeline-element-subtitle"
-                style={{ color: themeObj.dark.palette.secondary.main, fontSize: '18px' }}
-              >
-                {event.description}
-              </h2>
+              {
+                event.descriptionLinked ? (
+                  <h2
+                    className="vertical-timeline-element-subtitle"
+                    style={{ color: themeObj.dark.palette.secondary.main, fontSize: '18px' }}
+                  >
+                  <u>
+                    <a href={event.descriptionLink} target='_blank'>{event.description}</a>
+                  </u>
+                  </h2>
+                ) : (
+                  <h2
+                    className="vertical-timeline-element-subtitle"
+                    style={{ color: themeObj.dark.palette.secondary.main, fontSize: '18px' }}
+                  >
+                    {event.description}
+                  </h2>
+                )
+              }
             </VerticalTimelineElement>
           );
         })}

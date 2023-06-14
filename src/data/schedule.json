@@ -30,14 +30,11 @@
     "time": "12:30 pm"
   },
   {
-    "name": "Game - CTF",
-    "description": "Capture the flag games",
-    "time": "1:00 pm"
-  },
-  {
-    "name": "End of hacking",
-    "description": "Everyone submits their projects!",
-    "time": "8:00 pm"
+    "name": "Capture the Flag",
+    "description": "Click here to check your answers!",
+    "time": "1:00 pm",
+    "descriptionLinked": true,
+    "descriptionLink": "https://mvhacks-ctfs.vercel.app/"
   },
   {
     "name": "skribbl.io",

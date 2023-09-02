@@ -43,7 +43,7 @@ const IndexPage = () => {
           </div>
 
           <Button variant="outline">
-            <a href="https://forms.gle/iCm4pSHyZSi1paPQ6" target='_blank'>Join the 7.0 team!</a>
+            <a href="https://forms.gle/ivGpBxPEDeNZ2JaM6" target='_blank'>Apply for the 7.0 team!</a>
           </Button>
           <DateBanner></DateBanner>
           <Countdown

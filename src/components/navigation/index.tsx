@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { themeObj } from '../../utils/customTheme';
 import './styles.scss';
+import { navigate } from "gatsby"
 
 const Navigation = () => {
   return (
@@ -39,6 +40,13 @@ const Navigation = () => {
         </div>
         <div className="link">
           <Link to="/sponsors">Sponsors</Link>
+        </div>
+        <div className="link">
+          {/* <a href="https://forms.gle/vGcpMeRTdAHgKz8CA" target="_blank">Apply</a> */}
+          <Link to="/apply">
+            {/* https://forms.gle/vGcpMeRTdAHgKz8CA */}
+            Apply
+          </Link>
         </div>
       </div>
     </nav>

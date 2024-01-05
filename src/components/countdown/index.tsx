@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import { CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-// I'll fix this when I have time later -- I know the logic and whatever if flawed and failing terribly rn.
+//TODO: COMMENTED OUT CODE IS OG CODE -- EDITS FOR OLD WEBSITE
 interface timeProps {
   currentTime: Date;
   timeOfEvent: Date;
@@ -76,28 +76,34 @@ const Countdown = ({ year, month, day, hour }: eventDateProps) => {
         <div className="progressBars">
           {/* display: "grid", gridTemplateColumns: "repeat(3, 1fr)" */}
           <CircularProgressbarWithChildren
-            value={dayPercentage}
+            // value={dayPercentage}
+            value={0}
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div className="circleBigText">{timeLeft[0]}</div>
+            {/* <div className="circleBigText">{timeLeft[0]}</div> */}
+            <div className="circleBigText">0</div>
             <div>Days</div>
           </CircularProgressbarWithChildren>
           <CircularProgressbarWithChildren
-            value={hoursPercentage}
+            // value={hoursPercentage}
+            value={0}
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div className="circleBigText">{timeLeft[1]}</div>
+            {/* <div className="circleBigText">{timeLeft[1]}</div> */}
+            <div className="circleBigText">0</div>
             {/* used to be 128px */}
             <div>Hours</div>
           </CircularProgressbarWithChildren>
           <CircularProgressbarWithChildren
-            value={minutesPercentage}
+            // value={minutesPercentage}
+            value={0}
             className="progressCircle"
             styles={circularProgressStyles}
           >
-            <div className="circleBigText">{timeLeft[2]}</div>
+            {/* <div className="circleBigText">{timeLeft[2]}</div> */}
+            <div className="circleBigText">0</div>
             <div>Minutes</div>
           </CircularProgressbarWithChildren>
         </div>

@@ -63,6 +63,17 @@ const Layout = ({ children }: LayoutProps) => {
               Check out our 4.5 winners!
             </a>
           </Button>
+          <Button
+            variant="outline"
+            style={{ marginTop: '15px', justifyContent: "center"}}
+          >
+          <a
+              href="https://www.mvhacks.dev/"
+              target="_blank"
+            >
+              Updated MVHacks Website
+            </a>
+          </Button>
         </div>
       </footer>
     </div>

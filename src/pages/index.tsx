@@ -14,7 +14,11 @@ import eventInfo from '../data/schedule.json';
 import Banner from '../components/banner';
 import DateBanner from '../components/dateBanner';
 
+import { useDisclosure, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Link } from "@chakra-ui/react";
+
 const IndexPage = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure({ defaultIsOpen: true });
+
   return (
     <ChakraProvider theme={theme}>
       <Layout>
@@ -22,6 +26,26 @@ const IndexPage = () => {
           title="Home"
           children={undefined}
         />
+      <Modal isOpen={isOpen} onClose={onClose} isCentered>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>This Website Is Not Updated</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <p>This websited used our old url and is no longer updated. Please visit our new and improved website (mvhacks.dev) for the latest information.</p>
+          </ModalBody>
+          <ModalFooter>
+            <Button colorScheme="blue" mr={3} onClick={onClose}>
+              Close
+            </Button>
+            <Button colorScheme='blue' variant="solid">
+              <Link href="https://mvhacks.dev" isExternal>
+                Go to mvhacks.dev
+              </Link>
+            </Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
         <div className="center">
           <div
             id="backgroundText"
@@ -45,6 +69,7 @@ const IndexPage = () => {
           <Button variant="outline">
             <a href="https://forms.gle/ivGpBxPEDeNZ2JaM6" target='_blank'>Apply for the 7.0 team!</a>
           </Button>
+          <div style={{padding: "10vh"}}></div>
           <DateBanner></DateBanner>
           <Countdown
             year={2023}
